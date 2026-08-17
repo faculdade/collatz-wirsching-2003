@@ -29,8 +29,8 @@ python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-CPython 3.12, `mpmath` and `numpy`. Nothing else. Every script takes
-`--help`.
+CPython 3.12, `mpmath`, `numpy` and `scipy`. Nothing else. Every script
+takes `--help`.
 
 The fastest check on the paper's central claim needs no arguments and
 runs in under a second:

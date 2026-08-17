@@ -1,4 +1,6 @@
-# Exact-arithmetic and high-precision dependencies. Nothing else is needed;
-# every script runs on CPython 3.12 with these two packages.
+# Every script here runs on CPython 3.12 with these three packages.
+# scipy is needed by section-5-microcanonical/E-008 (linear_block_tv.py)
+# for its Gaussian routines; the other experiments need only the first two.
 mpmath>=1.3.0
 numpy>=2.0
+scipy>=1.11
