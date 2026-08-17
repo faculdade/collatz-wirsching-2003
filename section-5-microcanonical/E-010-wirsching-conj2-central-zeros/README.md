@@ -111,7 +111,20 @@ over all 486 units below `3^6`, the ratio reads 0.1019, 0.1472, 0.1341,
 0.1377, 0.1306, 0.1397, 0.1038 for `ell = 10..16`: flat. Over all 1458
 units below `3^7` it reads 0.102, 0.074, 0.107, 0.079, 0.116, 0.108,
 0.096 for `ell = 10..16`, and over all 4374 units below `3^8` it reads
-0.0509, 0.0736, 0.0805, 0.0787, 0.1016, 0.0967, 0.0878: also flat.
+0.0509, 0.0736, 0.0805, 0.0787, 0.1016, 0.0967, 0.0878.
+
+**Read as "flat" here until 2026-08-17, and that reading is superseded.**
+Critique round 6 found this section asserting the negation of the paper's
+own conclusion, which is worse than a stale number: a reader following the
+Data Availability link to check the abstract's central empirical claim
+would have found this page denying it. Two things changed. The 1458 series
+now runs to `ell = 18` (`ratio_ell18_output.txt`), where it reads 0.1161,
+0.1075, 0.0958, 0.0892, 0.0799 over `ell = 14..18`, monotone. And the
+inference sharpened: absence of trend in a minimum over a FIXED set is not
+absence of deterioration, because whichever integer attains 0.0892 at
+`ell = 17` held at least 0.1161 at `ell = 14`, so some `a < 3^7` loses at
+least 23%. The 4374 series likewise peaks at `ell = 14` and falls after,
+and that fall implicates some integer in it by the same argument.
 Over all 54 units below `3^4` it reads 0.3056, 0.2576, 0.1877, 0.2361,
 0.1742, 0.1720, 0.1677 for the same levels. **This one does decline**:
 five of its six transitions fall, and it loses 45% from `ell = 10` to
@@ -143,11 +156,12 @@ reproduced exactly). The 1458 series is the one carried by
 The minimum over all units modulo `3^ell` is the minimum over integers
 `a < 3^ell`, and that is not evidence about `liminf_ell` at any fixed
 `a`, because the residue attaining it has an integer representative of
-size `3^ell`. What the tables establish is that on the three larger
-fixed sets (486, 1458, 4374 integers) the ratio does not deteriorate
-with `ell`, while the all-unit minimum decays; that decay is the growth
-of the index set. The smallest set (54 integers) is the exception noted
-above and does fall. Separating that from a genuine decay of the
+size `3^ell`. What the tables establish, in the reading the paper now
+carries: the all-unit minimum's decay is the growth of the index set, but
+on the fixed sets a falling minimum implicates a specific integer, and
+three of the four fall somewhere in their range (54 units by 45%, 1458 by
+22% once `ell = 18` is included, 4374 after its `ell = 14` peak). Only the
+486 set is flat end to end. Separating that from a genuine decay of the
 left tail needs quantiles rather than the minimum, which is the next
 step recorded in H-013.
 
@@ -267,7 +281,7 @@ launched with a generous `--max-ell` and trusted to stop itself.
 RSS guard**, since resident memory no longer reflects the arrays; a
 free-disk check replaces it, which does not bound the still-resident
 Boolean arrays. At `ell = 21` those alone exceed this machine. See
-`notes/H-019.md` for the numbers before launching anything past
+`notes/H-019.md` in the framework repository, not public for the numbers before launching anything past
 `ell = 20`.
 
 The same commit also changed the reporting of `first_full`: a bare
@@ -284,7 +298,7 @@ Commit:       43ce2f5
 Date:         2026-08-17
 Environment:  Linux, Python 3.12.3, numpy 2.5.1
 Exit:         0
-Output:       experiments/E-010-wirsching-conj2-central-zeros/zeros_regression_ell10.log
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/zeros_regression_ell10.log
 Checked:      producer. The regression run this README described as
               "verified correctness-preserving" had no committed output
               until now; critique round 5 raised it. Reproduces every
@@ -297,7 +311,7 @@ Commit:       43ce2f5
 Date:         2026-08-17
 Environment:  Linux, Python 3.12.3, numpy 2.5.1
 Exit:         0 (both)
-Output:       experiments/E-010-wirsching-conj2-central-zeros/ratio_ram_vs_disk_ell8.log
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/ratio_ram_vs_disk_ell8.log
 Checked:      producer, by diffing the two outputs after removing the
               scratch-directory preflight lines that exist only in disk
               mode. They agree line for line. The README asserted this
@@ -309,8 +323,8 @@ Commit:       8911937
 Date:         2026-08-17
 Environment:  Linux, Python 3.12.3
 Exit:         0
-Output:       experiments/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4_k5.log
-Checked:      producer, against main.tex's Remark 5.13. S_4(5,a) = 5/4 and
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4_k5.log
+Checked:      producer, against main.tex's Remark 5.12. S_4(5,a) = 5/4 and
               7/4 on the two unit classes, so their sum is 3 and the Haar
               mean is 3/2, both asserted by the script. Added because
               critique round 3 found this pair quoted as an exact
@@ -327,7 +341,7 @@ Commit:       cfc63a1d21ebbfaca9bd93c6787d0715984d2975 (the tree the run
 Date:         2026-08-15
 Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3, 62 GiB RAM
 Exit:         0
-Output:       experiments/E-010-wirsching-conj2-central-zeros/zeros_extended_output.txt
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/zeros_extended_output.txt
 Checked:      producer (main session); every level through ell=18 matches
               the previously documented numbers exactly (independent
               reproduction in this repository); ell=19/20 are new, not
@@ -369,7 +383,7 @@ Commit:       653cc5db0b741547ff559d84dcebc04791f48c40
 Date:         2026-08-15
 Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3
 Exit:         0 (both)
-Output:       experiments/E-010-wirsching-conj2-central-zeros/quantiles_ell16.log,
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/quantiles_ell16.log,
               experiments/E-010-wirsching-conj2-central-zeros/quantiles_grid_ell16.log
 Checked:      producer (main session), against the specific numbers already
               quoted in this document's "central_quantiles.py" and
@@ -390,7 +404,7 @@ Commit:       397607e29cf42231ff3aaeea0f4725db12408c0f
 Date:         2026-08-16
 Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3, 62 GiB RAM
 Exit:         0 (all three)
-Output:       experiments/E-010-wirsching-conj2-central-zeros/ratio_fixedsets_ell16.log
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/ratio_fixedsets_ell16.log
 Checked:      producer (main session): every digit previously quoted in
               this document for the 486 and 4374 series reproduced
               exactly; the 54 series' quoted summary was corrected
@@ -462,9 +476,11 @@ a bare assertion:
   values are now produced by `weight_asymmetry.py` in this directory,
   written 2026-08-16 during round 4 after round 3's "documented as
   hand-derived" was correctly judged not to satisfy Rule 9a. It works
-  in exact rationals and reproduces 9/7 and 12/7 with Haar mean 1 at
-  `ell = 3`, and 6/5 and 9/5 with mean 1 at `ell = 4`. Output in
-  `weight_asymmetry_ell3.log`. `notes/H-013.md`'s earlier citation of
+  in exact rationals and reproduces 9/7 and 12/7 at `ell = 3`, and 6/5
+  and 9/5 at `ell = 4`. Each pair sums to 3, so the Haar mean over the
+  two unit classes is 3/2, not 1; this line said 1 until critique round 6
+  found it, the same error the section below already documents. Output in
+  `weight_asymmetry_ell3.log`. `notes/H-013.md` in the framework repository, not public's earlier citation of
   an `exact_weight_asymmetry.py` at a nonexistent path is superseded)
   (matching this project's own floating-point values independently),
   rising then falling.
@@ -473,7 +489,7 @@ a bare assertion:
   (entropy, norms), not a positive coordinate minimum.
 
 No route from the composition-counting recursion alone, without new
-input, currently closes H-013 either way. See `notes/H-013.md`'s
+input, currently closes H-013 either way. See `notes/H-013.md` in the framework repository, not public's
 2026-08-10 section for the full writeup and closure as
 `closed-inconclusive`.
 
@@ -609,7 +625,7 @@ Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3, 62 GiB RAM,
               transition. Derived, not measured: the scratch directory was
               deleted after the run and its peak size was not recorded)
 Exit:         0
-Output:       experiments/E-010-wirsching-conj2-central-zeros/ratio_ell18_output.txt
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/ratio_ell18_output.txt
 Checked:      producer (main session), against the raw output file and
               against the established d=+12 decay-rate and fixed-integer
               flat-band pattern from ell=4..17; critiqued twice
@@ -632,7 +648,7 @@ between runs, so the file would not be byte-identical).
 This closes the `ell = 17` -> `ell = 18` half of H-015's backfill (the
 `central_ratio.py` heavy rerun). Formal hypothesis closure still awaits
 three consecutive clean critique rounds (Rule 8f); see
-`notes/H-015.md` for the running record.
+`notes/H-015.md` in the framework repository, not public for the running record.
 
 
 Migration note: references `H-166`, out of this repo's scope, left unrenumbered.
@@ -647,7 +663,7 @@ Date:         2026-08-16
 Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3; exact
               rationals via fractions.Fraction, no floating point
 Exit:         0 (both)
-Output:       experiments/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell3.log
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell3.log
               experiments/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4.log
 Checked:      reproduces the 9/7 and 12/7 values this document and
               notes/H-013.md have quoted since 2026-08-10, and gives
@@ -658,7 +674,7 @@ Checked:      reproduces the 9/7 and 12/7 values this document and
               unit mean 3/2, and has been run at ell=1..7.
 ```
 
-**What this script establishes, after two corrections.** `notes/H-013.md` writes the weight with a leading
+**What this script establishes, after two corrections.** `notes/H-013.md` in the framework repository, not public writes the weight with a leading
 factor of 3 and asserts the weight sum averages to 1. Computed exactly:
 with the factor the values are 27/7 and 36/7, without it 9/7 and 12/7,
 which is what the same file quotes two lines below its own formula. So

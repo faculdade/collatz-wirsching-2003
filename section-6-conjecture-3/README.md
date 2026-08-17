@@ -18,7 +18,7 @@ C/sqrt(l)  : L_inf = -0.618860, c = 0.5386, max residual 2.14e-5
 C/ln^2(l)  : L_inf = -0.599498, c = 0.5491, max residual 5.51e-5
 ```
 
-so the measurement pins `c` only to `[0.539, 0.549]`. The script prints
+so the measurement gives `[0.539, 0.549]` as the span of two fitted forms, not as a bound. The script prints
 both fits and their spread; that spread, not the sub-range stability, is
 the dominant systematic.
 
