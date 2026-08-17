@@ -1,0 +1,12 @@
+computing exact moments to M_460 ...
+
+same-phase drift at the bare points, b = -0.7916
+
+      (l,3l)   observed  predicted   mismatch
+     (10,30)    -0.0128    +0.1058       112%
+    (50,150)    +0.0387    +0.0473        18%
+   (100,300)    +0.0320    +0.0335         4%
+   (150,450)    +0.0271    +0.0273         1%
+
+A 1-periodic Q cancels from every row above by construction, so
+these measure the finite-size correction to phi_0 alone.

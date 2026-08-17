@@ -205,6 +205,14 @@ def fit_models(series):
         (L_inf, coeff), *_ = np.linalg.lstsq(A, b, rcond=None)
         resid = float(np.max(np.abs(A @ np.array([L_inf, coeff]) - b)))
         out[name] = (float(L_inf), float(coeff), resid)
+    # The paper also quotes the shift from adding a 1/l term to the
+    # sqrt model. Critique round 3 found that figure with no run behind
+    # it, so it is computed here rather than asserted.
+    A = np.array([[1.0, 1.0 / math.sqrt(l), 1.0 / l] for l, _ in series])
+    b = np.array([v for _, v in series])
+    (L3, c1, c2), *_ = np.linalg.lstsq(A, b, rcond=None)
+    resid3 = float(np.max(np.abs(A @ np.array([L3, c1, c2]) - b)))
+    out["C/sqrt+1/ell"] = (float(L3), float(c1), resid3)
     return out
 
 

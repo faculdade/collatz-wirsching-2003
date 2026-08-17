@@ -1,0 +1,13 @@
+S_4(5,a) for every residue a mod 81, exact rationals
+gbar_4(5) = 2/3
+
+  a = 0 mod 3:  S = 0
+  a = 1 mod 3:  S = 5/4
+  a = 2 mod 3:  S = 7/4
+
+S(a=1 mod 3) + S(a=2 mod 3) = 3
+mean over the 54 units    = 3/2
+
+Both check out. The identity is proved in main.tex's
+rem:no-monotone-certificate; this script verifies it exactly
+at the given level rather than asserting it.

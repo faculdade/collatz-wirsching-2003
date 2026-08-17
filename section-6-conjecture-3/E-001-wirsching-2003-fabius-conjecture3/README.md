@@ -81,14 +81,28 @@ N_MAX without need; ℓ~1000+ would require tens of minutes to hours.
 ## Evidence (Rule 9a)
 
 ```
+Command:      python3 same_phase_drift.py
+Commit:       8911937
+Date:         2026-08-17
+Environment:  Linux, Python 3.12.3, mpmath (mp.dps=100)
+Exit:         0
+Output:       experiments/E-001-wirsching-2003-fabius-conjecture3/same_phase_drift_output.txt
+Checked:      producer, against main.tex's Remark 6.2. All twelve figures
+              reproduce: observed drifts -0.0128, +0.0387, +0.0320,
+              +0.0271; predicted +0.1058, +0.0473, +0.0335, +0.0273;
+              mismatches 112%, 18%, 4%, 1%. Written because critique round
+              3 found all twelve quoted with no committed output behind
+              any of them, and the (150,450) pair unrecoverable even from
+              the older bare-point log, which stopped at l=300.
+
 Command:      python3 experiment_conjecture3.py --max-ell 500
 Commit:       e007f33
 Date:         2026-08-17
 Environment:  Linux, Python 3.12.3, mpmath (mp.dps=100), numpy 2.5.1
 Exit:         0
 Output:       experiments/E-001-wirsching-2003-fabius-conjecture3/conjecture3_shifted_ell500.log
-Checked:      producer, against main.tex's Empirical Result 5.1 and
-              Remark 5.2. Runtime 314.8 s. This is the run that closes the
+Checked:      producer, against main.tex's Empirical Result 6.1 and
+              Remark 6.2. Runtime 314.8 s. This is the run that closes the
               two evidence gaps critique round 1 raised, both found by
               both critics: the script now evaluates at the paper's
               x_l^+ = x_l + 3^-(l+1) rather than the bare x_l, and reaches
@@ -100,8 +114,7 @@ Checked:      producer, against main.tex's Empirical Result 5.1 and
               to +28.290 at u=+2; the C/sqrt(l) fit over l=200..500 gives
               L_inf=-0.618860 and coeff=-0.7916, and the l>=350 sub-range
               moves L_inf by 2.99e-6.
-              The run also reports the second model form, which the paper
-              does not currently state: C/ln^2(l) gives L_inf=-0.599498
+              The run also reports the second model form, which the paper now states: C/ln^2(l) gives L_inf=-0.599498
               with max residual 5.51e-5 against 2.14e-5, so both forms fit
               this range comparably. The resulting MODEL spread on L_inf
               is 0.0194, putting c in [0.5386, 0.5491]. That spread, not

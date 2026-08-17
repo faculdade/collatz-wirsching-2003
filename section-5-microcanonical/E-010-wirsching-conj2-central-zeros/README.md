@@ -279,6 +279,19 @@ the largest attainable cost `3^ell - 1 - ell`.
 ## Evidence (Rule 9a): `central_zeros.py`, extended to `ell = 20`
 
 ```
+Command:      python3 weight_asymmetry.py --ell 4 --k 5
+Commit:       8911937
+Date:         2026-08-17
+Environment:  Linux, Python 3.12.3
+Exit:         0
+Output:       experiments/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4_k5.log
+Checked:      producer, against main.tex's Remark 5.12. S_4(5,a) = 5/4 and
+              7/4 on the two unit classes, so their sum is 3 and the Haar
+              mean is 3/2, both asserted by the script. Added because
+              critique round 3 found this pair quoted as an exact
+              evaluation with no run behind it; the committed logs covered
+              only S_3(3,.) and S_4(4,.).
+
 Command:      python3 central_zeros.py --max-ell 30
 Commit:       cfc63a1d21ebbfaca9bd93c6787d0715984d2975 (the tree the run
               actually executed against: the output file's mtime and its
