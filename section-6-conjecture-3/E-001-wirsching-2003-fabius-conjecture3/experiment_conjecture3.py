@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+> **NOTE ON PATHS.** References below to `notes/`, `literature/` or `HYPOTHESES.md` are to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
+
 """
 H-001 - teste computacional certificado da Conjectura 3 de Wirsching
 (2003, "On positive predecessor density in 3n+1 dynamics", DCDS 9(3)).
@@ -231,7 +234,7 @@ def main():
                  350, 400, 450, 500]
                 if e <= args.max_ell]
     # ELL_LIST stopped at 300 until 2026-08-17, so the ell=350..500 range
-    # that main.tex's abstract and Empirical Result 5.1 depend on rested on
+    # that main.tex's abstract and Empirical Result 6.1 depend on rested on
     # an inline run this file never reproduced (recorded in the README's own
     # Rule 9a block at the time). Critique round 1 raised it as major.
     N_MAX = max(ELL_LIST) + 10

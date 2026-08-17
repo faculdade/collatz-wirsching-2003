@@ -1,5 +1,8 @@
 # E-010: central-cost zeros and the quantitative half of Wirsching's (?3)
 
+> **NOTE ON PATHS.** References below to `notes/`, `literature/` or `HYPOTHESES.md` are to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
+
+
 Related hypotheses: H-003 (dated section of 2026-08-09), H-012, H-013,
 H-014 (opened from this experiment's quantile run), H-015 (this
 experiment is its entire evidence base) and H-019 (opened from the
@@ -128,9 +131,11 @@ and that fall implicates some integer in it by the same argument.
 Over all 54 units below `3^4` it reads 0.3056, 0.2576, 0.1877, 0.2361,
 0.1742, 0.1720, 0.1677 for the same levels. **This one does decline**:
 five of its six transitions fall, and it loses 45% from `ell = 10` to
-`ell = 16`. That is different from the other three fixed sets above,
-which are genuinely flat, and it is the smallest set here (a minimum
-over 54 values, so also the noisiest). Two earlier summaries of this
+`ell = 16`. It is the smallest set here (a minimum over 54 values, so also the
+noisiest), and it is the sharpest case rather than the only one: by the
+reading above, the 1458 set falls too once `ell = 18` is included, and
+the 4374 set falls after its `ell = 14` peak. Only the 486 set is flat
+end to end. Two earlier summaries of this
 line were both wrong: "sits near 0.22" (the middle of the range, not a
 value it settles at) and then "no trend" (indefensible against a
 45% monotone-ish fall). Corrected 2026-08-16 after the second was
@@ -281,7 +286,7 @@ launched with a generous `--max-ell` and trusted to stop itself.
 RSS guard**, since resident memory no longer reflects the arrays; a
 free-disk check replaces it, which does not bound the still-resident
 Boolean arrays. At `ell = 21` those alone exceed this machine. See
-`notes/H-019.md` in the framework repository, not public for the numbers before launching anything past
+`notes/H-019.md` for the numbers before launching anything past
 `ell = 20`.
 
 The same commit also changed the reporting of `first_full`: a bare
@@ -324,7 +329,7 @@ Date:         2026-08-17
 Environment:  Linux, Python 3.12.3
 Exit:         0
 Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4_k5.log
-Checked:      producer, against main.tex's Remark 5.12. S_4(5,a) = 5/4 and
+Checked:      producer, against main.tex's Remark 5.13. S_4(5,a) = 5/4 and
               7/4 on the two unit classes, so their sum is 3 and the Haar
               mean is 3/2, both asserted by the script. Added because
               critique round 3 found this pair quoted as an exact
@@ -384,7 +389,7 @@ Date:         2026-08-15
 Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3
 Exit:         0 (both)
 Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/quantiles_ell16.log,
-              experiments/E-010-wirsching-conj2-central-zeros/quantiles_grid_ell16.log
+              section-5-microcanonical/E-010-wirsching-conj2-central-zeros/quantiles_grid_ell16.log
 Checked:      producer (main session), against the specific numbers already
               quoted in this document's "central_quantiles.py" and
               "Resolving the d-sensitivity" and "bottom-bucket composition"
@@ -480,7 +485,7 @@ a bare assertion:
   and 9/5 at `ell = 4`. Each pair sums to 3, so the Haar mean over the
   two unit classes is 3/2, not 1; this line said 1 until critique round 6
   found it, the same error the section below already documents. Output in
-  `weight_asymmetry_ell3.log`. `notes/H-013.md` in the framework repository, not public's earlier citation of
+  `weight_asymmetry_ell3.log`. `notes/H-013.md`'s earlier citation of
   an `exact_weight_asymmetry.py` at a nonexistent path is superseded)
   (matching this project's own floating-point values independently),
   rising then falling.
@@ -489,7 +494,7 @@ a bare assertion:
   (entropy, norms), not a positive coordinate minimum.
 
 No route from the composition-counting recursion alone, without new
-input, currently closes H-013 either way. See `notes/H-013.md` in the framework repository, not public's
+input, currently closes H-013 either way. See `notes/H-013.md`'s
 2026-08-10 section for the full writeup and closure as
 `closed-inconclusive`.
 
@@ -648,7 +653,7 @@ between runs, so the file would not be byte-identical).
 This closes the `ell = 17` -> `ell = 18` half of H-015's backfill (the
 `central_ratio.py` heavy rerun). Formal hypothesis closure still awaits
 three consecutive clean critique rounds (Rule 8f); see
-`notes/H-015.md` in the framework repository, not public for the running record.
+`notes/H-015.md` for the running record.
 
 
 Migration note: references `H-166`, out of this repo's scope, left unrenumbered.
@@ -664,7 +669,7 @@ Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3; exact
               rationals via fractions.Fraction, no floating point
 Exit:         0 (both)
 Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell3.log
-              experiments/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4.log
+              section-5-microcanonical/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4.log
 Checked:      reproduces the 9/7 and 12/7 values this document and
               notes/H-013.md have quoted since 2026-08-10, and gives
               6/5, 9/5 at ell=4. Critiqued in H-015 round 5, which found
@@ -674,7 +679,7 @@ Checked:      reproduces the 9/7 and 12/7 values this document and
               unit mean 3/2, and has been run at ell=1..7.
 ```
 
-**What this script establishes, after two corrections.** `notes/H-013.md` in the framework repository, not public writes the weight with a leading
+**What this script establishes, after two corrections.** `notes/H-013.md` writes the weight with a leading
 factor of 3 and asserts the weight sum averages to 1. Computed exactly:
 with the factor the values are 27/7 and 36/7, without it 9/7 and 12/7,
 which is what the same file quotes two lines below its own formula. So

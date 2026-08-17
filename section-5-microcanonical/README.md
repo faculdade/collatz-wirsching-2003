@@ -24,6 +24,6 @@ level computed, so no `eta > 0` works there yet.
 
 `E-010`'s heavy levels are not laptop work. `central_ratio.py` at
 `l = 18` peaks near 119 GiB and needs `--scratch-dir` disk-backed mode;
-`central_zeros.py` at `l = 19, 20` is comparable. Committed outputs for
+`central_zeros.py` at `l = 19, 20` is far cheaper: measured peaks of 9.09 and 27.11 GiB. Committed outputs for
 both are in that folder, so nothing here requires re-running them.
 Levels through `l = 16` are cheap.

@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+> **NOTE ON PATHS.** References below to `notes/`, `literature/` or `HYPOTHESES.md` are to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
+
 """Exact computation of Wirsching's weight sum S_ell(k,a).
 
 Written 2026-08-16 to close a Rule 9a traceability gap: E-010's README
