@@ -1,0 +1,22 @@
+ell=1  sum(p)=1.0000000000  K_ell=1.666667  (esperado exato 5/3=1.666667)
+ell= 2  sum(p)=1.00000000  K_ell=   2.14286  K_ell/ell= 1.07143  tempo=  0.00s
+ell= 3  sum(p)=1.00000000  K_ell=   2.60443  K_ell/ell= 0.86814  tempo=  0.00s
+ell= 4  sum(p)=1.00000000  K_ell=   3.06865  K_ell/ell= 0.76716  tempo=  0.00s
+ell= 5  sum(p)=1.00000000  K_ell=   3.53416  K_ell/ell= 0.70683  tempo=  0.00s
+ell= 6  sum(p)=1.00000000  K_ell=   4.00033  K_ell/ell= 0.66672  tempo=  0.00s
+ell= 7  sum(p)=1.00000000  K_ell=   4.46582  K_ell/ell= 0.63797  tempo=  0.00s
+ell= 8  sum(p)=1.00000000  K_ell=   4.93174  K_ell/ell= 0.61647  tempo=  0.00s
+ell= 9  sum(p)=1.00000000  K_ell=   5.39840  K_ell/ell= 0.59982  tempo=  0.01s
+ell=10  sum(p)=1.00000000  K_ell=   5.86579  K_ell/ell= 0.58658  tempo=  0.03s
+ell=11  sum(p)=1.00000000  K_ell=   6.33396  K_ell/ell= 0.57581  tempo=  0.07s
+ell=12  sum(p)=1.00000000  K_ell=   6.80290  K_ell/ell= 0.56691  tempo=  0.22s
+ell=13  sum(p)=1.00000000  K_ell=   7.27251  K_ell/ell= 0.55942  tempo=  0.77s
+ell=14  sum(p)=1.00000000  K_ell=   7.74277  K_ell/ell= 0.55305  tempo=  2.48s
+ell=15  sum(p)=1.00000000  K_ell=   8.21360  K_ell/ell= 0.54757  tempo=  7.50s
+ell=16  sum(p)=1.00000000  K_ell=   8.68495  K_ell/ell= 0.54281  tempo= 21.79s
+ell=17  sum(p)=1.00000000  K_ell=   9.15677  K_ell/ell= 0.53863  tempo= 64.94s
+
+=== Diagnostico ===
+Se K_ell estabiliza/satura -> Hipotese L2 (K_inf<inf) suportada -> Lema 2' de H-126 tem conteudo.
+Se K_ell cresce no intervalo testado -> evidencia finita contra L2; nao prova divergencia.
+Ajuste K_ell ~ ell^p nos ultimos pontos: p=0.853

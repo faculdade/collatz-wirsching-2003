@@ -1,0 +1,42 @@
+# Section 3: the proof of Conjecture 1
+
+Verifies Theorem 3.1, which proves Wirsching's Conjecture 1, the
+implication `(*2) => (*1)`.
+
+## `cancellation_check.py`
+
+The proof's own step. Wirsching describes the averaged generators by an
+urn count without a generating function; the proof turns that into two
+generating functions over the coin set `c_0 = 1`, `c_j = 2*3^(j-1)`, and
+uses their product collapsing:
+
+```
+sum_k q_l(k) z^k = prod_j (1 - z^{c_j}) / (1 - z)
+sum_k p_l(k) z^k = prod_j (1 - z^{c_j})^{-1}
+P_l(z) Q_l(z)    = (1 - z)^{-(l+1)}
+```
+
+Run it:
+
+```
+python3 cancellation_check.py                       # l=1..8, k=0..24
+python3 cancellation_check.py --max-ell 10 --max-k 40
+```
+
+Expected output ends with `All checks passed`. Four things are checked,
+in exact integer and rational arithmetic with no floating point:
+
+1. the bounded-urn expansion against direct enumeration of occupancies,
+2. the cancellation, coefficient by coefficient, against the binomial
+   coefficients of `(1-z)^{-(l+1)}`,
+3. the support bound `sum_j (c_j - 1) = 3^l - l - 1`, which is what
+   forces the occupancy reading `0..c_j-1` of Wirsching's "capacity",
+4. the convolution identity `(p_l * gbar_l)(k) = C(k+l,l)/(2*3^(l-1))`.
+
+Runtime is under a second at the defaults and a few seconds at
+`--max-ell 10 --max-k 40`.
+
+## `E-003-wirsching-conj1/`
+
+The finite checks reported alongside the theorem. See its own README for
+the command and committed output.

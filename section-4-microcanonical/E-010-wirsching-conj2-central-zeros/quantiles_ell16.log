@@ -1,0 +1,104 @@
+Quantiles of g_ell(k,a)/gbar_ell(k) over unit residues a mod 3^ell, k = ell + d.
+Row sum checked against Wirsching's bounded-composition identity at every (ell, d). One forward pass in ell; all offsets are read from the same table per level.
+ell   d    n_units   q=1.0e-04     q=1.0e-03     q=1.0e-02     q=1.0e-01     q=5.0e-01        min
+-------------------------------------------------------------------------------------------------
+    [ell=1 total    0.0s]
+    [ell=2 total    0.0s]
+  3  +5         18     0.00000     0.00000     0.00000     0.00000     1.50000  0.00000  argmin_a=4
+      thresholds: P[R<=0.05]=0.388889  P[R<=0.10]=0.388889  P[R<=0.20]=0.388889  P[R<=0.30]=0.388889
+      bottom 1.0e-03 bucket (1 residues): fraction with a < 6561 is 1.000000
+  3 +12         18     0.00000     0.00000     0.00000     0.00000     1.50000  0.00000  argmin_a=1
+      thresholds: P[R<=0.05]=0.388889  P[R<=0.10]=0.388889  P[R<=0.20]=0.388889  P[R<=0.30]=0.388889
+      bottom 1.0e-03 bucket (1 residues): fraction with a < 6561 is 1.000000
+    [ell=3 total    0.0s]
+  4  +5         54     0.00000     0.00000     0.00000     0.64286     0.64286  0.00000  argmin_a=44
+      thresholds: P[R<=0.05]=0.074074  P[R<=0.10]=0.074074  P[R<=0.20]=0.074074  P[R<=0.30]=0.074074
+      bottom 1.0e-03 bucket (1 residues): fraction with a < 6561 is 1.000000
+  4 +12         54     0.32143     0.32143     0.32143     0.64286     0.96429  0.32143  argmin_a=7
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000000
+      bottom 1.0e-03 bucket (1 residues): fraction with a < 6561 is 1.000000
+    [ell=4 total    0.0s]
+  5  +5        162     0.00000     0.00000     0.35920     0.35920     1.07761  0.00000  argmin_a=241
+      thresholds: P[R<=0.05]=0.006173  P[R<=0.10]=0.006173  P[R<=0.20]=0.006173  P[R<=0.30]=0.006173
+      bottom 1.0e-03 bucket (1 residues): fraction with a < 6561 is 1.000000
+  5 +12        162     0.44414     0.44414     0.44414     0.77724     0.99931  0.44414  argmin_a=151
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000000
+      bottom 1.0e-03 bucket (1 residues): fraction with a < 6561 is 1.000000
+    [ell=5 total    0.0s]
+  6  +5        486     0.00000     0.00000     0.22396     0.44793     0.89585  0.00000  argmin_a=457
+      thresholds: P[R<=0.05]=0.004115  P[R<=0.10]=0.004115  P[R<=0.20]=0.004115  P[R<=0.30]=0.043210
+      bottom 1.0e-03 bucket (1 residues): fraction with a < 6561 is 1.000000
+  6 +12        486     0.48052     0.48052     0.57663     0.72078     1.00910  0.48052  argmin_a=430
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000000
+      bottom 1.0e-03 bucket (1 residues): fraction with a < 6561 is 1.000000
+    [ell=6 total    0.0s]
+  7  +5       1458     0.00000     0.00000     0.14814     0.44442     1.03698  0.00000  argmin_a=268
+      thresholds: P[R<=0.05]=0.002058  P[R<=0.10]=0.002058  P[R<=0.20]=0.015089  P[R<=0.30]=0.050069
+      bottom 1.0e-03 bucket (1 residues): fraction with a < 6561 is 1.000000
+  7 +12       1458     0.45125     0.47500     0.57000     0.68874     0.99749  0.45125  argmin_a=2113
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000000
+      bottom 1.0e-03 bucket (1 residues): fraction with a < 6561 is 1.000000
+    [ell=7 total    0.0s]
+  8  +5       4374     0.00000     0.10159     0.20318     0.40635     1.01589  0.00000  argmin_a=1573
+      thresholds: P[R<=0.05]=0.000686  P[R<=0.10]=0.000686  P[R<=0.20]=0.005258  P[R<=0.30]=0.021719
+      bottom 1.0e-03 bucket (4 residues): fraction with a < 6561 is 1.000000
+  8 +12       4374     0.44841     0.49966     0.52529     0.65340     1.01214  0.44841  argmin_a=5668
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000000
+      bottom 1.0e-03 bucket (4 residues): fraction with a < 6561 is 1.000000
+    [ell=8 total    0.0s]
+  9  +5      13122     0.00000     0.07134     0.21402     0.42805     0.99878  0.00000  argmin_a=5623
+      thresholds: P[R<=0.05]=0.000152  P[R<=0.10]=0.001296  P[R<=0.20]=0.007240  P[R<=0.30]=0.048544
+      bottom 1.0e-03 bucket (13 residues): fraction with a < 6561 is 0.538462
+  9 +12      13122     0.42635     0.45576     0.49986     0.60277     1.01442  0.41900  argmin_a=6019
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000000
+      bottom 1.0e-03 bucket (13 residues): fraction with a < 6561 is 0.230769
+    [ell=9 total    0.0s]
+ 10  +5      39366     0.05093     0.10187     0.20373     0.40746     0.96772  0.05093  argmin_a=4570
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000229  P[R<=0.20]=0.006935  P[R<=0.30]=0.038764
+      bottom 1.0e-03 bucket (39 residues): fraction with a < 6561 is 0.153846
+ 10 +12      39366     0.40167     0.43256     0.46787     0.57381     1.01079  0.38401  argmin_a=37258
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000000
+      bottom 1.0e-03 bucket (39 residues): fraction with a < 6561 is 0.076923
+    [ell=10 total    0.0s]
+ 11  +5     118098     0.07359     0.11039     0.18398     0.36797     0.91992  0.03680  argmin_a=17332
+      thresholds: P[R<=0.05]=0.000025  P[R<=0.10]=0.000406  P[R<=0.20]=0.014242  P[R<=0.30]=0.067961
+      bottom 1.0e-03 bucket (118 residues): fraction with a < 6561 is 0.025424
+ 11 +12     118098     0.38142     0.40337     0.43630     0.54880     0.99882  0.35123  argmin_a=62044
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000000
+      bottom 1.0e-03 bucket (118 residues): fraction with a < 6561 is 0.059322
+    [ell=11 total    0.2s]
+ 12  +5     354294     0.08046     0.10728     0.18773     0.34865     0.91185  0.05364  argmin_a=99682
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000299  P[R<=0.20]=0.018400  P[R<=0.30]=0.076659
+      bottom 1.0e-03 bucket (354 residues): fraction with a < 6561 is 0.028249
+ 12 +12     354294     0.36285     0.37687     0.40667     0.52412     0.98688  0.34883  argmin_a=116719
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000000
+      bottom 1.0e-03 bucket (354 residues): fraction with a < 6561 is 0.002825
+    [ell=12 total    0.5s]
+ 13  +5    1062882     0.07871     0.11807     0.15742     0.33452     0.90518  0.01968  argmin_a=1043035
+      thresholds: P[R<=0.05]=0.000004  P[R<=0.10]=0.000727  P[R<=0.20]=0.026828  P[R<=0.30]=0.085120
+      bottom 1.0e-03 bucket (1062 residues): fraction with a < 6561 is 0.012241
+ 13 +12    1062882     0.33874     0.35362     0.37880     0.50125     0.97618  0.31929  argmin_a=1297699
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000000
+      bottom 1.0e-03 bucket (1062 residues): fraction with a < 6561 is 0.003766
+    [ell=13 total    1.7s]
+ 14  +5    3188646     0.08708     0.11610     0.15964     0.30477     0.88529  0.04354  argmin_a=170422
+      thresholds: P[R<=0.05]=0.000003  P[R<=0.10]=0.000348  P[R<=0.20]=0.027431  P[R<=0.30]=0.090398
+      bottom 1.0e-03 bucket (3188 residues): fraction with a < 6561 is 0.001882
+ 14 +12    3188646     0.31560     0.32929     0.35363     0.47987     0.96583  0.28975  argmin_a=2733343
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000001
+      bottom 1.0e-03 bucket (3188 residues): fraction with a < 6561 is 0.001882
+    [ell=14 total    6.2s]
+ 15  +5    9565938     0.07523     0.10747     0.15046     0.30092     0.87053  0.02149  argmin_a=1220182
+      thresholds: P[R<=0.05]=0.000002  P[R<=0.10]=0.000744  P[R<=0.20]=0.035363  P[R<=0.30]=0.098888
+      bottom 1.0e-03 bucket (9565 residues): fraction with a < 6561 is 0.000314
+ 15 +12    9565938     0.29538     0.30769     0.33179     0.46102     0.96050  0.27487  argmin_a=559249
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.000286
+      bottom 1.0e-03 bucket (9565 residues): fraction with a < 6561 is 0.000418
+    [ell=15 total   24.3s]
+ 16  +5   28697814     0.07984     0.10380     0.14372     0.28744     0.85433  0.02395  argmin_a=22513705
+      thresholds: P[R<=0.05]=0.000002  P[R<=0.10]=0.000829  P[R<=0.20]=0.044274  P[R<=0.30]=0.111931
+      bottom 1.0e-03 bucket (28697 residues): fraction with a < 6561 is 0.000453
+ 16 +12   28697814     0.27584     0.28774     0.31155     0.44457     0.95284  0.25554  argmin_a=34917478
+      thresholds: P[R<=0.05]=0.000000  P[R<=0.10]=0.000000  P[R<=0.20]=0.000000  P[R<=0.30]=0.004123
+      bottom 1.0e-03 bucket (28697 residues): fraction with a < 6561 is 0.000105
+    [ell=16 total   78.7s]

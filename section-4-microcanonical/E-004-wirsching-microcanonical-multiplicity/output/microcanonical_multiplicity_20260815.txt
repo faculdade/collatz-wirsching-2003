@@ -1,0 +1,36 @@
+ell= 1 offset=-1 k= 0 total=1 hit=1/2 hit_fraction=0.50000000 min_over_mean=0 max_over_mean=2 normalized_collision=2
+ell= 1 offset=+0 k= 1 total=1 hit=1/2 hit_fraction=0.50000000 min_over_mean=0 max_over_mean=2 normalized_collision=2
+ell= 1 offset=+1 k= 2 total=0 hit=0/2 hit_fraction=0.00000000 min_over_mean=nan max_over_mean=nan normalized_collision=nan
+ell= 2 offset=-1 k= 1 total=2 hit=2/6 hit_fraction=0.33333333 min_over_mean=0 max_over_mean=3 normalized_collision=3
+ell= 2 offset=+0 k= 2 total=2 hit=2/6 hit_fraction=0.33333333 min_over_mean=0 max_over_mean=3 normalized_collision=3
+ell= 2 offset=+1 k= 3 total=2 hit=2/6 hit_fraction=0.33333333 min_over_mean=0 max_over_mean=3 normalized_collision=3
+ell= 3 offset=-1 k= 2 total=5 hit=5/18 hit_fraction=0.27777778 min_over_mean=0 max_over_mean=3.6 normalized_collision=3.6
+ell= 3 offset=+0 k= 3 total=7 hit=7/18 hit_fraction=0.38888889 min_over_mean=0 max_over_mean=2.5714286 normalized_collision=2.5714286
+ell= 3 offset=+1 k= 4 total=9 hit=8/18 hit_fraction=0.44444444 min_over_mean=0 max_over_mean=4 normalized_collision=2.4444444
+ell= 4 offset=-1 k= 2 total=9 hit=9/54 hit_fraction=0.16666667 min_over_mean=0 max_over_mean=6 normalized_collision=6
+ell= 4 offset=+0 k= 4 total=25 hit=23/54 hit_fraction=0.42592593 min_over_mean=0 max_over_mean=4.32 normalized_collision=2.5056
+ell= 4 offset=+1 k= 6 total=48 hit=38/54 hit_fraction=0.70370370 min_over_mean=0 max_over_mean=3.375 normalized_collision=1.640625
+ell= 5 offset=-1 k= 3 total=30 hit=30/162 hit_fraction=0.18518519 min_over_mean=0 max_over_mean=5.4 normalized_collision=5.4
+ell= 5 offset=+0 k= 5 total=91 hit=78/162 hit_fraction=0.48148148 min_over_mean=0 max_over_mean=3.5604396 normalized_collision=2.288854
+ell= 5 offset=+1 k= 7 total=199 hit=128/162 hit_fraction=0.79012346 min_over_mean=0 max_over_mean=3.2562814 normalized_collision=1.4931441
+ell= 6 offset=-1 k= 4 total=105 hit=101/486 hit_fraction=0.20781893 min_over_mean=0 max_over_mean=9.2571429 normalized_collision=4.9812245
+ell= 6 offset=+0 k= 6 total=335 hit=261/486 hit_fraction=0.53703704 min_over_mean=0 max_over_mean=4.3522388 normalized_collision=2.14364
+ell= 6 offset=+1 k= 8 total=805 hit=415/486 hit_fraction=0.85390947 min_over_mean=0 max_over_mean=3.6223602 normalized_collision=1.4676934
+ell= 7 offset=-1 k= 5 total=378 hit=348/1458 hit_fraction=0.23868313 min_over_mean=0 max_over_mean=7.7142857 normalized_collision=4.4693878
+ell= 7 offset=+0 k= 7 total=1247 hit=866/1458 hit_fraction=0.59396433 min_over_mean=0 max_over_mean=4.6768244 normalized_collision=2.0336873
+ell= 7 offset=+1 k= 9 total=3212 hit=1304/1458 hit_fraction=0.89437586 min_over_mean=0 max_over_mean=3.6313823 normalized_collision=1.4488221
+ell= 8 offset=-1 k= 6 total=1385 hit=1199/4374 hit_fraction=0.27411980 min_over_mean=0 max_over_mean=9.4743682 normalized_collision=4.070216
+ell= 8 offset=+0 k= 8 total=4684 hit=2829/4374 hit_fraction=0.64677641 min_over_mean=0 max_over_mean=5.6029035 normalized_collision=1.9840626
+ell= 8 offset=+1 k=10 total=12719 hit=4029/4374 hit_fraction=0.92112483 min_over_mean=0 max_over_mean=3.4389496 normalized_collision=1.4456891
+ell= 9 offset=-1 k= 6 total=2507 hit=2249/13122 hit_fraction=0.17139156 min_over_mean=0 max_over_mean=15.702433 normalized_collision=6.3824409
+ell= 9 offset=+0 k= 9 total=17719 hit=9075/13122 hit_fraction=0.69158665 min_over_mean=0 max_over_mean=6.6650488 normalized_collision=1.9616361
+ell= 9 offset=+1 k=12 total=79704 hit=12937/13122 hit_fraction=0.98590154 min_over_mean=0 max_over_mean=3.1280488 normalized_collision=1.3429713
+ell=10 offset=-1 k= 7 total=9428 hit=7953/39366 hit_fraction=0.20202713 min_over_mean=0 max_over_mean=16.701739 normalized_collision=5.6794418
+ell=10 offset=+0 k=10 total=67408 hit=28855/39366 hit_fraction=0.73299294 min_over_mean=0 max_over_mean=5.8399596 normalized_collision=1.957939
+ell=10 offset=+1 k=13 total=320022 hit=39056/39366 hit_fraction=0.99212518 min_over_mean=0 max_over_mean=3.3212779 normalized_collision=1.3717219
+ell=11 offset=-1 k= 8 total=35685 hit=27887/118098 hit_fraction=0.23613440 min_over_mean=0 max_over_mean=19.856747 normalized_collision=5.1627912
+ell=11 offset=+0 k=11 total=257621 hit=91089/118098 hit_fraction=0.77130011 min_over_mean=0 max_over_mean=6.876264 normalized_collision=1.9666273
+ell=11 offset=+1 k=14 total=1278860 hit=117554/118098 hit_fraction=0.99539366 min_over_mean=0 max_over_mean=3.601506 normalized_collision=1.4060704
+ell=12 offset=-1 k= 9 total=135784 hit=96909/354294 hit_fraction=0.27352707 min_over_mean=0 max_over_mean=23.483223 normalized_collision=4.7722564
+ell=12 offset=+0 k=12 total=988351 hit=286066/354294 hit_fraction=0.80742547 min_over_mean=0 max_over_mean=7.5278661 normalized_collision=1.9875601
+ell=12 offset=+1 k=15 total=5093880 hit=353336/354294 hit_fraction=0.99729603 min_over_mean=0 max_over_mean=4.0340668 normalized_collision=1.4442194

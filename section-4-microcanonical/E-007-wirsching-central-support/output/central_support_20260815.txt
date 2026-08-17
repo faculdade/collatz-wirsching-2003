@@ -1,0 +1,60 @@
+ell= 1 inverse_two_center=0 least_cost=0
+ell= 2 inverse_two_center=0 least_cost=3
+ell= 3 inverse_two_center=0 least_cost=4
+ell= 4 inverse_two_center=0 least_cost=5
+ell= 5 inverse_two_center=0 least_cost=6
+ell= 6 inverse_two_center=0 least_cost=7
+ell= 7 inverse_two_center=0 least_cost=8
+ell= 8 inverse_two_center=0 least_cost=9
+ell= 9 inverse_two_center=0 least_cost=10
+ell=10 inverse_two_center=0 least_cost=11
+ell=11 inverse_two_center=0 least_cost=12
+ell=12 inverse_two_center=0 least_cost=13
+ell=13 inverse_two_center=0 least_cost=14
+ell=14 inverse_two_center=0 least_cost=15
+ell=15 inverse_two_center=0 least_cost=16
+ell=16 inverse_two_center=0 least_cost=17
+ell=17 inverse_two_center=0 least_cost=18
+ell=18 inverse_two_center=0 least_cost=19
+ell=19 inverse_two_center=0 least_cost=20
+ell=20 inverse_two_center=0 least_cost=21
+ell=21 inverse_two_center=0 least_cost=22
+ell=22 inverse_two_center=1 least_cost=22
+ell=23 inverse_two_center=1 least_cost=not-computed
+ell=24 inverse_two_center=1 least_cost=not-computed
+ell=25 inverse_two_center=1 least_cost=not-computed
+ell=26 inverse_two_center=1 least_cost=not-computed
+ell=27 inverse_two_center=1 least_cost=not-computed
+ell=28 inverse_two_center=1 least_cost=not-computed
+ell=29 inverse_two_center=1 least_cost=not-computed
+ell=30 inverse_two_center=1 least_cost=not-computed
+ell=31 inverse_two_center=1 least_cost=not-computed
+ell=32 inverse_two_center=1 least_cost=not-computed
+ell=33 inverse_two_center=1 least_cost=not-computed
+ell=34 inverse_two_center=1 least_cost=not-computed
+ell=35 inverse_two_center=1 least_cost=not-computed
+ell=36 inverse_two_center=1 least_cost=not-computed
+ell=37 inverse_two_center=1 least_cost=not-computed
+ell=38 inverse_two_center=1 least_cost=not-computed
+ell=39 inverse_two_center=1 least_cost=not-computed
+ell=40 inverse_two_center=1 least_cost=not-computed
+ell=41 inverse_two_center=1 least_cost=not-computed
+ell=42 inverse_two_center=1 least_cost=not-computed
+ell=43 inverse_two_center=1 least_cost=not-computed
+ell=44 inverse_two_center=1 least_cost=not-computed
+ell=45 inverse_two_center=1 least_cost=not-computed
+ell=46 inverse_two_center=1 least_cost=not-computed
+ell=47 inverse_two_center=1 least_cost=not-computed
+ell=48 inverse_two_center=1 least_cost=not-computed
+ell=49 inverse_two_center=1 least_cost=not-computed
+ell=50 inverse_two_center=1 least_cost=not-computed
+ell=51 inverse_two_center=1 least_cost=not-computed
+ell=52 inverse_two_center=1 least_cost=not-computed
+ell=53 inverse_two_center=1 least_cost=not-computed
+ell=54 inverse_two_center=1 least_cost=not-computed
+ell=55 inverse_two_center=1 least_cost=not-computed
+ell=56 inverse_two_center=1 least_cost=not-computed
+ell=57 inverse_two_center=1 least_cost=not-computed
+ell=58 inverse_two_center=1 least_cost=not-computed
+ell=59 inverse_two_center=1 least_cost=not-computed
+ell=60 inverse_two_center=1 least_cost=not-computed

@@ -1,0 +1,13 @@
+ell max_degree identity tail_fraction_at_k=ell
+2 6 ok 0.66666667
+3 9 ok 0.65000000
+4 12 ok 0.41428571
+5 15 ok 0.42063492
+6 18 ok 0.42532468
+7 21 ok 0.42890443
+8 24 ok 0.43154623
+9 27 ok 0.22213081
+10 30 ok 0.22665570
+11 33 ok 0.23026741
+12 36 ok 0.23321251
+finite subexponential check through m=1000: C=0.372204

@@ -1,0 +1,16 @@
+ell= 1 cumulative_first=1 exact_first=none center_fraction=0.50000000 upper_fraction=0.00000000
+ell= 2 cumulative_first=4 exact_first=none center_fraction=0.33333333 upper_fraction=0.33333333
+ell= 3 cumulative_first=6 exact_first=none center_fraction=0.38888889 upper_fraction=0.44444444
+ell= 4 cumulative_first=7 exact_first=12 center_fraction=0.42592593 upper_fraction=0.70370370
+ell= 5 cumulative_first=9 exact_first=11 center_fraction=0.48148148 upper_fraction=0.79012346
+ell= 6 cumulative_first=10 exact_first=12 center_fraction=0.53703704 upper_fraction=0.85390947
+ell= 7 cumulative_first=11 exact_first=13 center_fraction=0.59396433 upper_fraction=0.89437586
+ell= 8 cumulative_first=12 exact_first=14 center_fraction=0.64677641 upper_fraction=0.92112483
+ell= 9 cumulative_first=13 exact_first=15 center_fraction=0.69158665 upper_fraction=0.98590154
+ell=10 cumulative_first=15 exact_first=15 center_fraction=0.73299294 upper_fraction=0.99212518
+ell=11 cumulative_first=16 exact_first=16 center_fraction=0.77130011 upper_fraction=0.99539366
+ell=12 cumulative_first=17 exact_first=17 center_fraction=0.80742547 upper_fraction=0.99729603
+ell=13 cumulative_first=18 exact_first=18 center_fraction=0.84030212 upper_fraction=0.99856522
+ell=14 cumulative_first=19 exact_first=19 center_fraction=0.87012920 upper_fraction=0.99931382
+ell=15 cumulative_first=20 exact_first=20 center_fraction=0.89653289 upper_fraction=0.99972559
+ell=16 cumulative_first=20 exact_first=21 center_fraction=0.91941222 upper_fraction=0.99999972

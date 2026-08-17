@@ -1,0 +1,4 @@
+ell=1 mass=1 max_difference=0.000e+00
+ell=2 mass=0.99999999999999989 max_difference=0.000e+00
+ell=3 mass=1 max_difference=4.163e-17
+ell=4 mass=0.99999999999999989 max_difference=2.082e-17
