@@ -59,12 +59,17 @@ package versions, the exit code, and the raw output file.
 Two runs are not reproducible on ordinary hardware, and the paper's
 claims do not depend on re-running them:
 
-- `section-5-microcanonical/E-010`'s `central_ratio.py` at `l = 18` peaks near 119 GiB and needed
-  a disk-backed memmap mode. Its committed output is
-  `ratio_ell18_output.txt`. Levels through `l = 16` run in minutes on a
+- `section-5-microcanonical/E-010`'s `central_ratio.py` at `l = 18` is the
+  expensive one. Its peak is a MODELLED 119 GiB (89.5 for the `l = 18`
+  table plus 29.8 for the `l = 17` one held during the transition), not a
+  measured figure; the committed `ratio_ell18_output.txt` prints the
+  89.5 GiB preflight estimate for the single largest array. It needed a
+  disk-backed memmap mode. Levels through `l = 16` run in minutes on a
   laptop.
-- `E-010`'s `central_zeros.py` at `l = 19, 20` has the same shape of
-  cost. Its committed output is `zeros_extended_output.txt`.
+- `E-010`'s `central_zeros.py` at `l = 19, 20` is much cheaper than that,
+  and its peaks WERE measured: `zeros_extended_output.txt` records
+  resident sets of 9.09 and 27.11 GiB. The `l = 19` level is within reach
+  of an ordinary workstation; `l = 20` is not.
 
 Both figures those runs produce are reported in the paper as computed at
 those levels, with the peak memory stated as derived from the allocation

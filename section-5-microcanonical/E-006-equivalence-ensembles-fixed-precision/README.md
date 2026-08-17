@@ -62,8 +62,8 @@ Commit:       73a0ada
 Date:         2026-08-17
 Environment:  Linux, Python 3.12.3, numpy 2.5.1
 Exit:         0
-Output:       experiments/E-006-equivalence-ensembles-fixed-precision/output/fixed_precision_projection_ell13_20260817.txt
-Checked:      producer, against main.tex's Empirical Result 4.7. All four
+Output:       section-5-microcanonical/E-006-equivalence-ensembles-fixed-precision/output/fixed_precision_projection_ell13_20260817.txt
+Checked:      producer, against main.tex's Empirical Result 5.10. All four
               full-precision and precision-one values the paper quotes at
               ell=13 reproduce exactly: 0.25194861 -> 0.25195 (k=ell,
               r=13), 0.26078317 -> 0.26078 (k=ell+3, r=13),

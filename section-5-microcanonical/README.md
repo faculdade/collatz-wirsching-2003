@@ -7,9 +7,9 @@ the exact command, the environment, and the committed raw output.
 |---|---|
 | `E-004-wirsching-microcanonical-multiplicity/` | Empirical Result 4.8, the multiplicity and support diagnostics, including the first fully supported cost per level |
 | `E-005-microcanonical-fourier/` | Empirical Result 4.11, the Fourier spectrum and the termwise absolute bound, which is negative and so vacuous at every level tested |
-| `E-006-equivalence-ensembles-fixed-precision/` | Empirical Result 4.7, total-variation distances at fixed 3-adic precision, `l <= 13` |
+| `E-006-equivalence-ensembles-fixed-precision/` | Empirical Result 5.10, total-variation distances at fixed 3-adic precision, `l <= 13` |
 | `E-007-wirsching-central-support/` | the targeted central-support predicate |
-| `E-008-linear-block-nonequivalence/` | Theorem 4.6's Gaussian limit, checked against the closed form at `rho = 0.25, 0.5, 0.75` |
+| `E-008-linear-block-nonequivalence/` | Theorem 5.8's Gaussian limit, checked against the closed form at `rho = 0.25, 0.5, 0.75` |
 | `E-010-wirsching-conj2-central-zeros/` | Empirical Results 4.9 and 4.10, the quantile diagnosis, the central-cost zeros, and the fixed-set minima |
 | `E-002-syracuse-collision-mass-k-ell/` | nothing in the paper directly. It is here because `E-006` imports its Syracuse level solver, and without it that script does not run |
 

@@ -57,7 +57,7 @@ point `x_ℓ⁺ = x_ℓ + 3^(−ℓ−1)`:
    committed as `conjecture3_shifted_ell500.log`.
 
 Conjecture 3 remains numerically supported and unproved by this test. See
-`notes/H-001.md` in the framework repository for the full analysis.
+`notes/H-001.md` in the framework repository (not public) in the framework repository for the full analysis.
 
 ## Files
 
@@ -86,7 +86,7 @@ Commit:       8911937
 Date:         2026-08-17
 Environment:  Linux, Python 3.12.3, mpmath (mp.dps=100)
 Exit:         0
-Output:       experiments/E-001-wirsching-2003-fabius-conjecture3/same_phase_drift_output.txt
+Output:       section-6-conjecture-3/E-001-wirsching-2003-fabius-conjecture3/same_phase_drift_output.txt
 Checked:      producer, against main.tex's Remark 6.2. All twelve figures
               reproduce: observed drifts -0.0128, +0.0387, +0.0320,
               +0.0271; predicted +0.1058, +0.0473, +0.0335, +0.0273;
@@ -100,7 +100,7 @@ Commit:       e007f33
 Date:         2026-08-17
 Environment:  Linux, Python 3.12.3, mpmath (mp.dps=100), numpy 2.5.1
 Exit:         0
-Output:       experiments/E-001-wirsching-2003-fabius-conjecture3/conjecture3_shifted_ell500.log
+Output:       section-6-conjecture-3/E-001-wirsching-2003-fabius-conjecture3/conjecture3_shifted_ell500.log
 Checked:      producer, against main.tex's Empirical Result 6.1 and
               Remark 6.2. Runtime 314.8 s. This is the run that closes the
               two evidence gaps critique round 1 raised, both found by

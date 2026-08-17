@@ -284,7 +284,7 @@ Commit:       8911937
 Date:         2026-08-17
 Environment:  Linux, Python 3.12.3
 Exit:         0
-Output:       experiments/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4_k5.log
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4_k5.log
 Checked:      producer, against main.tex's Remark 5.12. S_4(5,a) = 5/4 and
               7/4 on the two unit classes, so their sum is 3 and the Haar
               mean is 3/2, both asserted by the script. Added because
@@ -302,7 +302,7 @@ Commit:       cfc63a1d21ebbfaca9bd93c6787d0715984d2975 (the tree the run
 Date:         2026-08-15
 Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3, 62 GiB RAM
 Exit:         0
-Output:       experiments/E-010-wirsching-conj2-central-zeros/zeros_extended_output.txt
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/zeros_extended_output.txt
 Checked:      producer (main session); every level through ell=18 matches
               the previously documented numbers exactly (independent
               reproduction in this repository); ell=19/20 are new, not
@@ -344,7 +344,7 @@ Commit:       653cc5db0b741547ff559d84dcebc04791f48c40
 Date:         2026-08-15
 Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3
 Exit:         0 (both)
-Output:       experiments/E-010-wirsching-conj2-central-zeros/quantiles_ell16.log,
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/quantiles_ell16.log,
               experiments/E-010-wirsching-conj2-central-zeros/quantiles_grid_ell16.log
 Checked:      producer (main session), against the specific numbers already
               quoted in this document's "central_quantiles.py" and
@@ -365,7 +365,7 @@ Commit:       397607e29cf42231ff3aaeea0f4725db12408c0f
 Date:         2026-08-16
 Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3, 62 GiB RAM
 Exit:         0 (all three)
-Output:       experiments/E-010-wirsching-conj2-central-zeros/ratio_fixedsets_ell16.log
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/ratio_fixedsets_ell16.log
 Checked:      producer (main session): every digit previously quoted in
               this document for the 486 and 4374 series reproduced
               exactly; the 54 series' quoted summary was corrected
@@ -437,7 +437,7 @@ a bare assertion:
   values are now produced by `weight_asymmetry.py` in this directory,
   written 2026-08-16 during round 4 after round 3's "documented as
   hand-derived" was correctly judged not to satisfy Rule 9a. It works
-  in exact rationals and reproduces 9/7 and 12/7 with Haar mean 1 at
+  in exact rationals and reproduces 9/7 and 12/7 with Haar mean 3/2 at
   `ell = 3`, and 6/5 and 9/5 with mean 1 at `ell = 4`. Output in
   `weight_asymmetry_ell3.log`. `notes/H-013.md`'s earlier citation of
   an `exact_weight_asymmetry.py` at a nonexistent path is superseded)
@@ -584,7 +584,7 @@ Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3, 62 GiB RAM,
               transition. Derived, not measured: the scratch directory was
               deleted after the run and its peak size was not recorded)
 Exit:         0
-Output:       experiments/E-010-wirsching-conj2-central-zeros/ratio_ell18_output.txt
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/ratio_ell18_output.txt
 Checked:      producer (main session), against the raw output file and
               against the established d=+12 decay-rate and fixed-integer
               flat-band pattern from ell=4..17; critiqued twice
@@ -617,12 +617,13 @@ Migration note: references `H-166`, out of this repo's scope, left unrenumbered.
 ```
 Command:      python3 weight_asymmetry.py --ell 3 --k 3
               python3 weight_asymmetry.py --ell 4 --k 4
-Commit:       (this commit)
+Commit:       see this file's own history; the run postdates the
+              correction to gbar(0,k) described below
 Date:         2026-08-16
 Environment:  Linux 7.0.0-28-generic x86_64, Python 3.12.3; exact
               rationals via fractions.Fraction, no floating point
 Exit:         0 (both)
-Output:       experiments/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell3.log
+Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell3.log
               experiments/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4.log
 Checked:      reproduces the 9/7 and 12/7 values this document and
               notes/H-013.md have quoted since 2026-08-10, and gives
