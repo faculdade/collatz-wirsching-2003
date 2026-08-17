@@ -81,7 +81,7 @@ model rather than measured.
 `W_3 f(x) = (3/2) int_{3x-2}^{3x} f`. `phi_0` is Berg and Kruppel's
 explicit asymptotic for a particular solution of the truncated equation;
 its closed form and all five constants are displayed in the paper, in
-Section 2, so this repository does not restate them. `g_l(k,a)` are
+Section 3, so this repository does not restate them. `g_l(k,a)` are
 Wirsching's generators and `gbar_l(k)` their residue average.
 
 ## License and citation
