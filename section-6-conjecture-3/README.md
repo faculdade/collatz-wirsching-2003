@@ -1,4 +1,4 @@
-# Section 5: the certified numerical test of Conjecture 3
+# Section 6: the certified numerical test of Conjecture 3
 
 `E-001-wirsching-2003-fabius-conjecture3/` holds everything.
 

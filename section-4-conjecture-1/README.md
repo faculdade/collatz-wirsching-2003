@@ -1,7 +1,8 @@
-# Section 3: the proof of Conjecture 1
+# Section 4: the proof of Conjecture 1
 
-Verifies Theorem 3.1, which proves Wirsching's Conjecture 1, the
-implication `(*2) => (*1)`.
+Verifies Theorem 4.1, which proves Wirsching's Conjecture 1, the
+implication `(*2) => (*1)`, and with it Corollary 4.2: condition `(*3)`
+implies uniform positive predecessor density, unconditionally.
 
 ## `cancellation_check.py`
 
@@ -35,6 +36,19 @@ in exact integer and rational arithmetic with no floating point:
 
 Runtime is under a second at the defaults and a few seconds at
 `--max-ell 10 --max-k 40`.
+
+## `partition_bound_check.py`
+
+The proof's other arithmetic step. It needs the partition count for the
+coins `1, 2, 6, 18, ...` to be `exp(O(log^2 m))`, and the paper proves
+that in two clauses. This script computes the count exactly by dynamic
+programming, reports the smallest constant for which the bound holds
+(`0.372` up to `m = 4000`), and checks the paper's own elementary bound
+against the exact count.
+
+```
+python3 partition_bound_check.py --max-m 4000
+```
 
 ## `E-003-wirsching-conj1/`
 

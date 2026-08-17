@@ -1,4 +1,4 @@
-# Section 4: the microcanonical decomposition and the ensemble regimes
+# Section 5: the microcanonical decomposition and the ensemble regimes
 
 Six experiments back this section, plus one included only as a dependency. Each folder has its own README with
 the exact command, the environment, and the committed raw output.

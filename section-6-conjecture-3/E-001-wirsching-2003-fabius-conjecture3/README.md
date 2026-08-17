@@ -17,27 +17,57 @@ antiderivatives.
 
 ## Result
 
-Run up to ℓ=500 (CLT window, u∈[−2,2]): the decisive ratio
-L_ℓ=3^(1−ℓ)φ(3x_ℓ)/φ(x_ℓ) converges to the predicted value 2/3 with a
-deficit of (0.580±0.001)/ℓ; a coefficient independently reproduced by
-Berg-Krüppel's (1998) own φ₀ asymptotics. ln(φ/φ₀) converges to a
-finite limit L=−0.619±0.001(statistical)±0.015(functional form), i.e.
-c=e^L≈0.54 (honest interval 0.53-0.55). Strong uniformity across the
-CLT window (dispersion <10⁻⁴ at ℓ=500, versus an individual variation
-of ~100 units in ln φ). No visible log-periodic modulation.
-**Conjecture 3 numerically SUPPORTED**; but it's the most concrete tip
-of a chain of 3 conjectures; Conjectures 1 and 2 (above it) remain open
-and are untouched by this test. See H-001 for the full analysis.
+Updated 2026-08-17 after critique round 2 found this section contradicting
+the manuscript on four points; the four corrections are named below rather
+than silently applied, since this file is public and someone may have read
+the old version.
+
+Run to `ℓ=500` (CLT window, `u∈[−2,2]`), evaluated at Wirsching's shifted
+point `x_ℓ⁺ = x_ℓ + 3^(−ℓ−1)`:
+
+- The decisive ratio `L_ℓ = 3^(1−ℓ)·φ(3x_ℓ⁺)/φ(x_ℓ⁺)` approaches `2/3`
+  at every `u` tested, monotonically in `ℓ`, with a central-sequence
+  deficit `ℓ·(2/3 − L_ℓ)` of `0.8026` at `ℓ=200` and `0.8021` at
+  `ℓ=500`.
+- `ln(φ/φ₀)` has a limit consistent with a constant, near-uniformly in
+  `u`: the spread across the seven tested `u` at `ℓ=500` is
+  `6.33×10⁻⁵`.
+- Extrapolating that limit is model-dependent, and this is the dominant
+  uncertainty. `C/√ℓ` gives `L∞ = −0.618860`, so `c = 0.5386`, with
+  maximum residual `2.1×10⁻⁵`; `C/ln²ℓ` gives `L∞ = −0.599498`, so
+  `c = 0.5491`, with maximum residual `5.5×10⁻⁵`. The two fit this range
+  comparably, so `c` is pinned only to `[0.539, 0.549]`.
+
+**What the four corrections were.**
+
+1. The deficit coefficient was quoted as `0.580/ℓ`. That is the value at
+   the **bare** point `x_ℓ`, which the script used until 2026-08-17;
+   Wirsching's (7.5) and the paper both evaluate at `x_ℓ⁺`, where the
+   coefficient is `0.802`. Both are computable now (`--bare-point`
+   recovers the old one) and they must not be mixed.
+2. "No visible log-periodic modulation" is the wrong statement. `L_ℓ` is
+   not merely free of visible modulation, it is **blind** to a
+   `1`-periodic factor `Q(log₃x)` by construction: the same-phase pair
+   satisfies `x_{3ℓ}/x_ℓ = 3^(1−2ℓ)`, an integer shift in `log₃`, so `Q`
+   cancels identically at any amplitude.
+3. "Conjectures 1 and 2 remain open" is out of date for Conjecture 1,
+   which the paper proves. Conjecture 2 is open.
+4. The script stopped at `ℓ=300` and the `ℓ=350..500` extension was run
+   inline and not persisted. It now runs to `ℓ=500` and the output is
+   committed as `conjecture3_shifted_ell500.log`.
+
+Conjecture 3 remains numerically supported and unproved by this test. See
+`notes/H-001.md` in the framework repository for the full analysis.
 
 ## Files
 
 - `experiment_conjecture3.py`; main script: exact moments, reduction
   by antiderivatives, φ₀ via Berg-Krüppel asymptotics (symbolic
   constants α,β,γ,δ,ε), validation (φ(1/2)=3/2 exact, odd central
-  moments=0), sweep up to ℓ=300.
-- Extension to ℓ∈{350,400,450,500} (6+ decimals, out-of-sample test
-  against the tail models fit at ℓ≤300) run inline, not persisted as a
-  separate script; see H-001 for the numbers.
+  moments=0), sweep to ℓ=500 behind `--max-ell`, both extrapolation
+  models, and the paper's shifted evaluation point by default.
+- `conjecture3_shifted_ell500.log`; the committed output of the ℓ=500
+  run, 314.8 s, from which every figure above is read.
 
 ## Reproduce
 

@@ -18,9 +18,9 @@ what it verifies, how to run it, and what output to expect.
 
 | Folder | Paper section | Verifies |
 |---|---|---|
-| `section-3-conjecture-1/` | §3, Theorem 3.1 | the proof of Conjecture 1: the generating-function cancellation, in exact arithmetic, plus finite checks |
-| `section-4-microcanonical/` | §4, Theorems 4.1 and 4.4 to 4.9, Empirical Results 4.7 to 4.11 | the microcanonical decomposition, the three ensemble regimes, and the quantile and support diagnostics |
-| `section-5-conjecture-3/` | §5, Empirical Result 5.1 and Remark 5.2 | the exact evaluation of phi to depth 500 and the extrapolation of c |
+| `section-4-conjecture-1/` | §4, Theorem 4.1 and Corollary 4.2 | the proof of Conjecture 1: the generating-function cancellation, in exact arithmetic, plus finite checks |
+| `section-5-microcanonical/` | §5, the decomposition, the three ensemble regimes, and the empirical results | the microcanonical decomposition, the three ensemble regimes, and the quantile and support diagnostics |
+| `section-6-conjecture-3/` | §6, the certified evaluation of phi and the same-phase remark | the exact evaluation of phi to depth 500 and the extrapolation of c |
 
 ## Running
 
@@ -36,13 +36,19 @@ The fastest check on the paper's central claim needs no arguments and
 runs in under a second:
 
 ```
-python3 section-3-conjecture-1/cancellation_check.py
+python3 section-4-conjecture-1/cancellation_check.py
 ```
 
 It verifies the cancellation `P_l(z) Q_l(z) = (1-z)^{-(l+1)}` coefficient
 by coefficient, the support bound `sum_j (c_j - 1) = 3^l - l - 1`, and the
 convolution identity `(p_l * gbar_l)(k) = C(k+l,l) / (2*3^(l-1))`, all in
 exact integer and rational arithmetic, for `l = 1..8` and `k = 0..24`.
+
+Alongside it, `partition_bound_check.py` verifies the other step the
+proof needs, that the partition count for the coins `1, 2, 6, 18, ...` is
+`exp(O(log^2 m))`. Together those two are the whole arithmetic content of
+the proof of Conjecture 1; the rest is the tail estimate and the window
+bookkeeping, which are analytic.
 
 ## What reproduces, and what does not
 
@@ -53,7 +59,7 @@ package versions, the exit code, and the raw output file.
 Two runs are not reproducible on ordinary hardware, and the paper's
 claims do not depend on re-running them:
 
-- `E-010`'s `central_ratio.py` at `l = 18` peaks near 119 GiB and needed
+- `section-5-microcanonical/E-010`'s `central_ratio.py` at `l = 18` peaks near 119 GiB and needed
   a disk-backed memmap mode. Its committed output is
   `ratio_ell18_output.txt`. Levels through `l = 16` run in minutes on a
   laptop.
