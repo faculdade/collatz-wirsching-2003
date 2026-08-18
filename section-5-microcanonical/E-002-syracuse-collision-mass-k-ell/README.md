@@ -8,7 +8,7 @@ Related hypothesis: `H-126` (not part of this repository's migrated scope, left 
 ## What was done
 
 A decisive computational test, requested by the advisor before
-formalizing the "regime-2 lemma" (H-115/H-126): the Fable proposed a
+formalizing the "regime-2 lemma" (H-115/H-126): an earlier analysis proposed a
 conditional Lemma 2' whose hypothesis is K_∞ := lim_ℓ K_ℓ < ∞, where
 
     K_ℓ := 3^ℓ · Σ_y P(Syrac(Z/3^ℓZ) = y)² = 3^ℓ · P(Syrac_ℓ = Syrac'_ℓ)

@@ -10,7 +10,7 @@ H-001 - teste computacional certificado da Conjectura 3 de Wirsching
 Objeto: a densidade invariante phi (ponto fixo unico do operador de
 medias W_3 f(x) = (3/2)*integral_{3x-2}^{3x} f(t)dt sobre [0,1]) e' o
 analogo base-3 da funcao de Fabius (densidade de X = soma_j 2*U_j*3^-j,
-U_j uniformes iid em [0,1] - identidade derivada pelo Fable, verificada:
+U_j uniformes iid em [0,1]. A identidade e' verificada abaixo:
 X =d (2U+X)/3 reproduz exatamente a equacao de W_3).
 
 Conjectura 3 (a mais concreta da cadeia de 3 conjecturas do Wirsching,
@@ -32,7 +32,7 @@ com (a=3, lambda=2/3, nossos parametros):
     gamma = -2*beta - delta - 1/2
     eps   = 1/2 + alpha - beta*ln(2*beta)
 
-Metodo (upgrade do Fable - SEM iterar W_3): os momentos M_i = E[X^i] de
+Metodo (SEM iterar W_3): os momentos M_i = E[X^i] de
 phi sao RACIONAIS EXATOS via a autossimilaridade acima. Para calcular
 phi(x) numa cauda extrema x~l*3^-l, reduz-se via primitivas iteradas:
 

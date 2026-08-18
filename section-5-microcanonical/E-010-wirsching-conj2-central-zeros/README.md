@@ -455,7 +455,7 @@ A structurally different result in this project (H-166, unrelated to
 Wirsching's `g_ell`) proves `min_u N_ell(u)/N_(ell-1)(...)` is a convex
 combination of the previous level's ratios, giving monotonicity and a
 bound certified at every higher level from one finite computation. An
-external model (Codex, high reasoning effort) was asked whether the
+an independent check was run on whether the
 same mechanism applies to `R_ell(k,a) = g_ell(k,a)/gbar_ell(k)`. It
 does not, with a derivation and an explicit counterexample rather than
 a bare assertion:
