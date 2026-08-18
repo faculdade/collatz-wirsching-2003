@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""The same-phase drift of ln(phi/phi_0), for Remark 6.2 of paper 05.
+"""The same-phase drift of ln(phi/phi_0), for the same-phase remark of paper 05.
 
-Remark 6.2 compares ln(phi/phi_0) at the pairs (l, 3l) evaluated at the
+the same-phase remark compares ln(phi/phi_0) at the pairs (l, 3l) evaluated at the
 BARE points x_l = l/3^l, not at the shifted x_l^+ the rest of the paper
 uses. The pair shares phase exactly: x_{3l}/x_l = 3^(1-2l), an integer
 shift in log_3, so a 1-periodic Q(log_3 x) cancels identically from the

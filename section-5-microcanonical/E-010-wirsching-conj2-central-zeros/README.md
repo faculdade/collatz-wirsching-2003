@@ -329,7 +329,7 @@ Date:         2026-08-17
 Environment:  Linux, Python 3.12.3
 Exit:         0
 Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4_k5.log
-Checked:      producer, against main.tex's Remark 5.13. S_4(5,a) = 5/4 and
+Checked:      producer, against main.tex's the quantile diagnosis. S_4(5,a) = 5/4 and
               7/4 on the two unit classes, so their sum is 3 and the Haar
               mean is 3/2, both asserted by the script. Added because
               critique round 3 found this pair quoted as an exact

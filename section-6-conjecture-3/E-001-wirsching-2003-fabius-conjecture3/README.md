@@ -39,7 +39,7 @@ point `x_ℓ⁺ = x_ℓ + 3^(−ℓ−1)`:
   uncertainty. `C/√ℓ` gives `L∞ = −0.618860`, so `c = 0.5386`, with
   maximum residual `2.1×10⁻⁵`; `C/ln²ℓ` gives `L∞ = −0.599498`, so
   `c = 0.5491`, with maximum residual `5.5×10⁻⁵`. The two fit this range
-  comparably, so the two fitted forms span `[0.539, 0.549]`, which is not a bound on the limit.
+  comparably, so `c` is pinned only to `[0.539, 0.549]`.
 
 **What the four corrections were.**
 
@@ -90,7 +90,7 @@ Date:         2026-08-17
 Environment:  Linux, Python 3.12.3, mpmath (mp.dps=100)
 Exit:         0
 Output:       section-6-conjecture-3/E-001-wirsching-2003-fabius-conjecture3/same_phase_drift_output.txt
-Checked:      producer, against main.tex's Remark 6.2. All twelve figures
+Checked:      producer, against main.tex's the same-phase remark. All twelve figures
               reproduce: observed drifts -0.0128, +0.0387, +0.0320,
               +0.0271; predicted +0.1058, +0.0473, +0.0335, +0.0273;
               mismatches 112%, 18%, 4%, 1%. Written because critique round
@@ -104,8 +104,8 @@ Date:         2026-08-17
 Environment:  Linux, Python 3.12.3, mpmath (mp.dps=100), numpy 2.5.1
 Exit:         0
 Output:       section-6-conjecture-3/E-001-wirsching-2003-fabius-conjecture3/conjecture3_shifted_ell500.log
-Checked:      producer, against main.tex's Empirical Result 6.1 and
-              Remark 6.2. Runtime 314.8 s. This is the run that closes the
+Checked:      producer, against main.tex's the numerical test of (*4) and (*5) and
+              the same-phase remark. Runtime 314.8 s. This is the run that closes the
               two evidence gaps critique round 1 raised, both found by
               both critics: the script now evaluates at the paper's
               x_l^+ = x_l + 3^-(l+1) rather than the bare x_l, and reaches
@@ -115,12 +115,12 @@ Checked:      producer, against main.tex's Empirical Result 6.1 and
               l=500; the spread of ln(phi/phi0) across the seven u at
               l=500 is 6.333e-5; the deficit ranges from -32.124 at u=-2
               to +28.290 at u=+2; the C/sqrt(l) fit over l=200..500 gives
-              Lambda=-0.618860 and coeff=-0.7916, and the l>=350 sub-range
-              moves Lambda by 2.99e-6.
-              The run also reports the second model form, which the paper states in Empirical Result 6.1: C/ln^2(l) gives Lambda=-0.599498
+              L_inf=-0.618860 and coeff=-0.7916, and the l>=350 sub-range
+              moves L_inf by 2.99e-6.
+              The run also reports the second model form, which the paper states in the numerical test of (*4) and (*5): C/ln^2(l) gives L_inf=-0.599498
               with max residual 5.51e-5 against 2.14e-5, so both forms fit
-              this range comparably. The resulting MODEL spread on Lambda
-              is 0.0194, the two fitted forms spanning [0.5386, 0.5491]. That spread, not
+              this range comparably. The resulting MODEL spread on L_inf
+              is 0.0194, putting c in [0.5386, 0.5491]. That spread, not
               the 4e-4 shift from adding a 1/l term, is the dominant systematic on
               c, exactly as this README's own earlier summary and
               notes/H-001.md both recorded.

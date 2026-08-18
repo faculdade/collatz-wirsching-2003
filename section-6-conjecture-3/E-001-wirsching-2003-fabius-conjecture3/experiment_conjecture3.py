@@ -234,7 +234,7 @@ def main():
                  350, 400, 450, 500]
                 if e <= args.max_ell]
     # ELL_LIST stopped at 300 until 2026-08-17, so the ell=350..500 range
-    # that main.tex's abstract and Empirical Result 6.1 depend on rested on
+    # that main.tex's abstract and the numerical test of (*4) and (*5) depend on rested on
     # an inline run this file never reproduced (recorded in the README's own
     # Rule 9a block at the time). Critique round 1 raised it as major.
     N_MAX = max(ELL_LIST) + 10
