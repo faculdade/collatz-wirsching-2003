@@ -73,7 +73,7 @@ Conjecture 3 remains numerically supported and unproved by this test. See
   moments=0), sweep to ℓ=500 behind `--max-ell`, both extrapolation
   models, and the paper's shifted evaluation point by default.
 - `conjecture3_shifted_ell500.log`; the committed output of the ℓ=500
-  run, 314.8 s, from which every figure above is read.
+  run, 310.0 s, from which every figure above is read.
 
 ## Reproduce
 
