@@ -657,9 +657,11 @@ columns below the first line (the per-level elapsed-time fields vary
 between runs, so the file would not be byte-identical).
 
 This closes the `ell = 17` -> `ell = 18` half of H-015's backfill (the
-`central_ratio.py` heavy rerun). Formal hypothesis closure still awaits
-three consecutive clean critique rounds (Rule 8f); see
-`H-015` for the running record.
+`central_ratio.py` heavy rerun). H-015 is closed-confirmed, on the
+hypothesis standard the researcher selected on 2026-08-17; the three
+consecutive clean rounds of Rule 8f are the PAPER's stopping criterion,
+not a hypothesis's, and an earlier version of this sentence conflated
+the two. See `H-015` for the running record.
 
 
 Migration note: references `H-166`, out of this repo's scope, left unrenumbered.
