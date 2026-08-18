@@ -19,8 +19,10 @@ C(k+l, l) / (2 * 3^(l-1)).
 This script verifies all of that in exact integer arithmetic, with no
 floating point anywhere:
 
-  1. the two product expansions against direct enumeration of urn
-     occupancies (bounded) and unbounded compositions,
+  1. the two product expansions against each other and against their
+     closed forms. (An earlier version of this docstring said "against
+     direct enumeration of urn occupancies"; no such enumeration is
+     implemented, and the claim is withdrawn.)
   2. the cancellation, coefficient by coefficient, against the binomial
      coefficients of (1-z)^{-(l+1)},
   3. the identity q_l(k) = 2 * 3^(l-1) * gbar_l(k), where gbar_l comes

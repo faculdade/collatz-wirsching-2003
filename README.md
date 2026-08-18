@@ -54,7 +54,10 @@ bookkeeping, which are analytic.
 
 ## What reproduces, and what does not
 
-Every figure quoted in the paper comes from a run committed here, and
+Every figure quoted in the paper comes from a run committed here, with
+one stated exception: the 119 GiB peak for the `l = 18` run is MODELLED,
+and the committed output prints only the 89.5 GiB preflight estimate for
+the single largest array. The exception is spelled out below, and
 each experiment's README carries the exact command, the interpreter and
 package versions, the exit code, and the raw output file.
 

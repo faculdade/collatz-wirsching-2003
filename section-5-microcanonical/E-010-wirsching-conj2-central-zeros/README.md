@@ -170,7 +170,9 @@ The minimum over all units modulo `3^ell` is the minimum over integers
 `a < 3^ell`, and that is not evidence about `liminf_ell` at any fixed
 `a`, because the residue attaining it has an integer representative of
 size `3^ell`. What the tables establish, in the reading the paper now
-carries: the all-unit minimum's decay is the growth of the index set, but
+carries: the all-unit minimum's decay has a component from the growth of
+the index set, and this computation does not separate that from
+deterioration of residues that already existed, but
 on the fixed sets a falling minimum implicates a specific integer, and
 three of the four fall somewhere in their range (54 units by 45%, 1458 by
 22% once `ell = 18` is included, 4374 after its `ell = 14` peak). Only the

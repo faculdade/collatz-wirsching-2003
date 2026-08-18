@@ -12,7 +12,7 @@ most m, so p_l(m) <= (m+1)^(log_3(m/2)+2), which is exp(O(log^2(m+2))).
 This script does two things:
 
   1. computes p_l(m) exactly by dynamic programming and reports the
-     smallest C for which the bound holds on the tested range, and
+     smallest C for which the bound holds at the sampled m on the tested range, and
   2. checks the paper's own elementary bound against the exact count,
      confirming it is valid (and loose, which is fine: the proof only
      needs the exp(O(log^2)) shape).
@@ -24,7 +24,7 @@ O(sqrt l) dominates. If the partition count grew like exp(c*m) instead,
 the argument would fail.
 
 Run:  python3 partition_bound_check.py [--max-m 4000]
-Exits 0 if the bound holds throughout, 1 otherwise.
+Exits 0 if the bound holds at the sampled m at every sampled m (see the sample list below; the all-m loop fits the constant and does NOT re-test the bound), 1 otherwise.
 """
 from __future__ import annotations
 
