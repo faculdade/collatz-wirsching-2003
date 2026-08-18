@@ -56,8 +56,8 @@ Every figure quoted in the paper comes from a run committed here, and
 each experiment's README carries the exact command, the interpreter and
 package versions, the exit code, and the raw output file.
 
-One computation is beyond ordinary hardware, and the paper's
-claims do not depend on re-running them:
+One computation is beyond ordinary hardware. The paper's claims do
+not depend on re-running it:
 
 - `section-5-microcanonical/E-010`'s `central_ratio.py` at `l = 18` is the
   expensive one. Its peak is a MODELLED 119 GiB (89.5 for the `l = 18`
@@ -67,13 +67,10 @@ claims do not depend on re-running them:
   disk-backed memmap mode. Levels through `l = 16` run in minutes on a
   laptop.
 - `E-010`'s `central_zeros.py` at `l = 19, 20` is much cheaper than that,
-  and its peaks WERE measured: `zeros_extended_output.txt` records
-  resident sets of 9.09 and 27.11 GiB. The `l = 19` level is within reach
-  of an ordinary workstation; `l = 20` is.
-
-Both figures those runs produce are reported in the paper as computed at
-those levels, with the peak memory stated as derived from the allocation
-model rather than measured.
+  and its peaks were measured, not modelled: `zeros_extended_output.txt`
+  records resident sets of 9.09 and 27.11 GiB. At those sizes `l = 19`
+  runs on a laptop and `l = 20` needs a workstation, which is what the
+  paper states.
 
 ## Notation
 

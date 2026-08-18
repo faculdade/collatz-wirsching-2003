@@ -16,7 +16,7 @@ X =d (2U+X)/3 reproduz exatamente a equacao de W_3).
 Conjectura 3 (a mais concreta da cadeia de 3 conjecturas do Wirsching,
 reduzindo densidade positiva de predecessores 3n+1): existe c>0 tal que
 
-    liminf_{l->inf} phi(z_l)/phi_0(z_l) = c > 0
+    lim_{l->inf} phi(z_l)/phi_0(z_l) = c > 0
 
 uniformemente para sequencias (z_l) na classe A_delta (janela CLT
 |l - k_l| <= delta*sqrt(l)), com phi_0 a assintotica fechada de
@@ -320,8 +320,8 @@ def main():
                       f"shift={abs(f2 - fits['C/sqrt(ell)'][0]):.2e}")
 
     print(f"\n=== Concluido em {time.time()-t0:.1f}s ===")
-    print("Conjectura 3: ln r deve convergir (ou oscilar limitado) - nao divergir a -inf/+inf")
-    print("Teste decisivo (⋆5): L_l deve ter limsup < 1 (previsao via phi_0: L_l -> 2/3)")
+    print("Conjecture 3 asserts a LIMIT. Bounded oscillation is not a\n  weaker form of it: if ln r oscillates without settling, the limit\n  does not exist and Conjecture 3 is false. What is measured here is\n  the behaviour of ln r over the range computed, nothing beyond it.")
+    print("L_l (prediction via phi_0: L_l -> 2/3) is evidence for (*4),\n  NOT for (*5): it cannot see the periodic alternative that would\n  falsify Conjecture 3. Only ln(phi/phi_0) bears on (*5).")
 
 
 if __name__ == "__main__":
