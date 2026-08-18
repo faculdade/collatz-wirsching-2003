@@ -18,7 +18,7 @@ what it verifies, how to run it, and what output to expect.
 
 | Folder | Paper section | Verifies |
 |---|---|---|
-| `section-4-conjecture-1/` | §4, Theorem 4.1 and Corollary 4.2 | the proof of Conjecture 1: the generating-function cancellation, in exact arithmetic, plus finite checks |
+| `section-4-conjecture-1/` | §4, the theorem proving Conjecture 1 and its corollary on positive predecessor density | the proof of Conjecture 1: the generating-function cancellation, in exact arithmetic, plus finite checks |
 | `section-5-microcanonical/` | §5, the decomposition, the three ensemble regimes, and the empirical results | the microcanonical decomposition, the three ensemble regimes, and the quantile and support diagnostics |
 | `section-6-conjecture-3/` | §6, the certified evaluation of phi and the same-phase remark | the exact evaluation of phi to depth 500 and the extrapolation of c |
 

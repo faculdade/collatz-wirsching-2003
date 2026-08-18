@@ -1,7 +1,7 @@
 # Section 4: the proof of Conjecture 1
 
-Verifies Theorem 4.1, which proves Wirsching's Conjecture 1, the
-implication `(*2) => (*1)`, and with it Corollary 4.2: condition `(*3)`
+Verifies the theorem that proves Wirsching's Conjecture 1, the
+implication `(*2) => (*1)`, and with it the corollary: condition `(*3)`
 implies uniform positive predecessor density, unconditionally.
 
 ## `cancellation_check.py`

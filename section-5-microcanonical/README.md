@@ -5,17 +5,17 @@ the exact command, the environment, and the committed raw output.
 
 | Folder | Backs |
 |---|---|
-| `E-004-wirsching-microcanonical-multiplicity/` | Empirical Result 5.11, the multiplicity and support diagnostics, including the first fully supported cost per level |
-| `E-005-microcanonical-fourier/` | Empirical Result 5.14, the Fourier spectrum and the termwise absolute bound, which is negative and so vacuous at every level tested |
-| `E-006-equivalence-ensembles-fixed-precision/` | Empirical Result 5.10, total-variation distances at fixed 3-adic precision, `l <= 13` |
+| `E-004-wirsching-microcanonical-multiplicity/` | the multiplicity and support diagnostics, including the first fully supported cost per level |
+| `E-005-microcanonical-fourier/` | the Fourier spectrum result: the spectrum and the termwise absolute bound, which is negative and so vacuous at every level tested |
+| `E-006-equivalence-ensembles-fixed-precision/` | the fixed-precision finite-level result: total-variation distances at fixed 3-adic precision, `l <= 13` |
 | `E-007-wirsching-central-support/` | the targeted central-support predicate |
-| `E-008-linear-block-nonequivalence/` | Theorem 5.8's Gaussian limit, checked against the closed form at `rho = 0.25, 0.5, 0.75` |
-| `E-010-wirsching-conj2-central-zeros/` | Empirical Results 5.11 and 5.12, the quantile diagnosis, the central-cost zeros, and the fixed-set minima |
+| `E-008-linear-block-nonequivalence/` | the linear-block nonequivalence theorem's Gaussian limit, checked against the closed form at `rho = 0.25, 0.5, 0.75` |
+| `E-010-wirsching-conj2-central-zeros/` | the multiplicity and support diagnostics and the quantile diagnosis, the central-cost zeros, and the fixed-set minima |
 | `E-002-syracuse-collision-mass-k-ell/` | nothing in the paper directly. It is here because `E-006` imports its Syracuse level solver, and without it that script does not run |
 
 ## The one result to look at first
 
-Theorem 5.1 gives the decomposition exactly, at every finite level. What
+the microcanonical decomposition theorem gives the decomposition exactly, at every finite level. What
 is open is the hypothesis `g_l(k,a) >= eta gbar_l(k)`, and
 `E-004` shows why: the minimum multiplicity is zero at `k = l` at every
 level computed, so no `eta > 0` works there yet.
