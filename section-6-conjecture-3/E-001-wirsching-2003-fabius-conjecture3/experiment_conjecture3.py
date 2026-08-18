@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-# NOTE ON PATHS. References below to `notes/`, `literature/` or
-# `HYPOTHESES.md` are to the framework repository, which is not public.
-# Everything a reader needs to reproduce the paper's computations is in
-# this repository.
+# NOTE ON RECORDS. Hypothesis identifiers such as H-013, the hypothesis
+# tracker and the literature index refer to the framework repository,
+# which is not public. Everything a reader needs to reproduce the paper's
+# computations is in this repository.
 """
 H-001 - teste computacional certificado da Conjectura 3 de Wirsching
 (2003, "On positive predecessor density in 3n+1 dynamics", DCDS 9(3)).
@@ -192,7 +192,7 @@ def fit_models(series):
     Returns {name: (L_inf, coeff, max_abs_residual)}. Two forms are fitted
     because they are the paper's dominant systematic, not a refinement:
     E-001's own README records L = -0.619 +- 0.001(statistical)
-    +- 0.015(functional form), and notes/H-001.md records that C/ln^2(l)
+    +- 0.015(functional form), and H-001 records that C/ln^2(l)
     is "equally stable ... indistinguishable from C/sqrt(l) in this range;
     it is the dominant source of systematic uncertainty". Critique round 1
     (2026-08-17) found the paper's abstract quoting only the 4e-4

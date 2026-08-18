@@ -1,6 +1,6 @@
 # E-001; Certified test of Wirsching's (2003) Conjecture 3 via exact moments of φ
 
-> **NOTE ON PATHS.** References below to `notes/`, `literature/` or `HYPOTHESES.md` are to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
+> **NOTE ON RECORDS.** Hypothesis identifiers such as H-013, the hypothesis tracker and the literature index refer to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
 
 
 Related hypothesis: ``H-001``
@@ -60,7 +60,7 @@ point `x_ℓ⁺ = x_ℓ + 3^(−ℓ−1)`:
    committed as `conjecture3_shifted_ell500.log`.
 
 Conjecture 3 remains numerically supported and unproved by this test. See
-`notes/H-001.md` in the framework repository for the full analysis.
+`H-001` in the framework repository for the full analysis.
 
 ## Files
 
@@ -123,7 +123,7 @@ Checked:      producer, against main.tex's the numerical test of (*4) and (*5) a
               is 0.0194, putting c in [0.5386, 0.5491]. That spread, not
               the 4e-4 shift from adding a 1/l term, is the dominant systematic on
               c, exactly as this README's own earlier summary and
-              notes/H-001.md both recorded.
+              H-001 both recorded.
 
 Command:      python3 experiment_conjecture3.py
 Commit:       a31aaec

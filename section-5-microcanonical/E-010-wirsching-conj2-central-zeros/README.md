@@ -1,6 +1,6 @@
 # E-010: central-cost zeros and the quantitative half of Wirsching's (?3)
 
-> **NOTE ON PATHS.** References below to `notes/`, `literature/` or `HYPOTHESES.md` are to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
+> **NOTE ON RECORDS.** Hypothesis identifiers such as H-013, the hypothesis tracker and the literature index refer to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
 
 
 Related hypotheses: H-003 (dated section of 2026-08-09), H-012, H-013,
@@ -292,7 +292,7 @@ launched with a generous `--max-ell` and trusted to stop itself.
 RSS guard**, since resident memory no longer reflects the arrays; a
 free-disk check replaces it, which does not bound the still-resident
 Boolean arrays. At `ell = 21` those alone exceed this machine. See
-`notes/H-019.md` for the numbers before launching anything past
+`H-019` for the numbers before launching anything past
 `ell = 20`.
 
 The same commit also changed the reporting of `first_full`: a bare
@@ -358,7 +358,7 @@ Checked:      producer (main session); every level through ell=18 matches
               reproduction in this repository); ell=19/20 are new, not
               previously computed here; internal audit against the
               backward predicate ran through ell=7 as usual. Critiqued in
-              H-015 rounds 2 and 3 (see notes/H-015.md); round 3's R3-03 corrected an extrapolation
+              H-015 rounds 2 and 3 (see H-015); round 3's R3-03 corrected an extrapolation
               drawn from this file's coherent counts. Rounds 4 and 5
               also drew on this file.
 ```
@@ -400,7 +400,7 @@ Checked:      producer (main session), against the specific numbers already
               quoted in this document's "central_quantiles.py" and
               "Resolving the d-sensitivity" and "bottom-bucket composition"
               sections. Critiqued in H-015 rounds 2 and 3 (see
-              notes/H-015.md); round 2's R2-01 corrected the
+              H-015); round 2's R2-01 corrected the
               bucket-composition interval quoted from these logs.
 ```
 
@@ -421,7 +421,7 @@ Checked:      producer (main session): every digit previously quoted in
               exactly; the 54 series' quoted summary was corrected
               against the actual values. Critiqued in H-015 round 3,
               which corrected the 54-series characterization drawn from
-              this log (see notes/H-015.md).
+              this log (see H-015).
 ```
 
 ## Extending the fixed-integer test to `ell = 17`
@@ -464,7 +464,7 @@ a bare assertion:
   3/2 at every level, where a convex combination would need 1. (An
   earlier version of this bullet said the average IS 1, which
   `main.tex`'s own `rem:no-monotone-certificate` refutes and has since
-  2026-08-10; corrected in round 5. See notes/H-022.md, closed.) Admissibility of `j` for fixed `a` depends only on
+  2026-08-10; corrected in round 5. See H-022, closed.) Admissibility of `j` for fixed `a` depends only on
   `a mod 3` (the condition `2^(j+1)*a = 1 mod 3` fixes the parity of
   `j`, nothing more), so `S_ell(k,a)` takes only two values per level,
   one per residue class of `a mod 3`. Exact counterexample at
@@ -491,7 +491,7 @@ a bare assertion:
   and 9/5 at `ell = 4`. Each pair sums to 3, so the Haar mean over the
   two unit classes is 3/2, not 1; this line said 1 until critique round 6
   found it, the same error the section below already documents. Output in
-  `weight_asymmetry_ell3.log`. `notes/H-013.md`'s earlier citation of
+  `weight_asymmetry_ell3.log`. `H-013`'s earlier citation of
   an `exact_weight_asymmetry.py` at a nonexistent path is superseded)
   (matching this project's own floating-point values independently),
   rising then falling.
@@ -500,7 +500,7 @@ a bare assertion:
   (entropy, norms), not a positive coordinate minimum.
 
 No route from the composition-counting recursion alone, without new
-input, currently closes H-013 either way. See `notes/H-013.md`'s
+input, currently closes H-013 either way. See `H-013`'s
 2026-08-10 section for the full writeup and closure as
 `closed-inconclusive`.
 
@@ -640,7 +640,7 @@ Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/ratio
 Checked:      producer (main session), against the raw output file and
               against the established d=+12 decay-rate and fixed-integer
               flat-band pattern from ell=4..17; critiqued twice
-              (2026-08-15, 2026-08-16), see notes/H-015.md
+              (2026-08-15, 2026-08-16), see H-015
 ```
 
 **The recorded output file predates the peak-memory fix, by design.**
@@ -659,7 +659,7 @@ between runs, so the file would not be byte-identical).
 This closes the `ell = 17` -> `ell = 18` half of H-015's backfill (the
 `central_ratio.py` heavy rerun). Formal hypothesis closure still awaits
 three consecutive clean critique rounds (Rule 8f); see
-`notes/H-015.md` for the running record.
+`H-015` for the running record.
 
 
 Migration note: references `H-166`, out of this repo's scope, left unrenumbered.
@@ -677,7 +677,7 @@ Exit:         0 (both)
 Output:       section-5-microcanonical/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell3.log
               section-5-microcanonical/E-010-wirsching-conj2-central-zeros/weight_asymmetry_ell4.log
 Checked:      reproduces the 9/7 and 12/7 values this document and
-              notes/H-013.md have quoted since 2026-08-10, and gives
+              H-013 have quoted since 2026-08-10, and gives
               6/5, 9/5 at ell=4. Critiqued in H-015 round 5, which found
               the first version's Haar-mean claim wrong and a gbar edge
               case at ell=0 that broke the identity at ell=1. The script
@@ -685,7 +685,7 @@ Checked:      reproduces the 9/7 and 12/7 values this document and
               unit mean 3/2, and has been run at ell=1..7.
 ```
 
-**What this script establishes, after two corrections.** `notes/H-013.md` writes the weight with a leading
+**What this script establishes, after two corrections.** `H-013` writes the weight with a leading
 factor of 3 and asserts the weight sum averages to 1. Computed exactly:
 with the factor the values are 27/7 and 36/7, without it 9/7 and 12/7,
 which is what the same file quotes two lines below its own formula. So

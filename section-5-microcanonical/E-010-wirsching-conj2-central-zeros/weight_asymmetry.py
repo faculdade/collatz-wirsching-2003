@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-# NOTE ON PATHS. References below to `notes/`, `literature/` or
-# `HYPOTHESES.md` are to the framework repository, which is not public.
-# Everything a reader needs to reproduce the paper's computations is in
-# this repository.
+# NOTE ON RECORDS. Hypothesis identifiers such as H-013, the hypothesis
+# tracker and the literature index refer to the framework repository,
+# which is not public. Everything a reader needs to reproduce the paper's
+# computations is in this repository.
 """Exact computation of Wirsching's weight sum S_ell(k,a).
 
 Written 2026-08-16 to close a Rule 9a traceability gap: E-010's README
-and notes/H-013.md both quote S_3(3,a) = 9/7 and 12/7 as the
+and H-013 both quote S_3(3,a) = 9/7 and 12/7 as the
 counterexample showing the weights do not sum to 1 pointwise, and both
 cited a producer script at a path that does not exist in this
 repository. Documenting the values as hand-derived was not enough; the
@@ -45,14 +45,14 @@ from averaging over ALL residues mod 3^ell, where the inadmissible
 class contributes an artificial zero and the units are exactly 2/3 of
 the total, so the all-residue average is always 2/3 of the unit
 average. Obtaining 1 that way is a consequence of the measure chosen,
-not an identity. Found by H-015 round 5; see notes/H-022.md, closed.
+not an identity. Found by H-015 round 5; see H-022, closed.
 
-On the factor of 3 in notes/H-013.md's displayed weight. It is
+On the factor of 3 in H-013's displayed weight. It is
 correct under the reading that bar_g there means the raw
 bounded-composition count B, since B_ell = 2*3^(ell-1)*gbar_ell makes
 3*B_(ell-1)(k-j)/B_ell(k) identically equal to
 gbar_(ell-1)(k-j)/gbar_ell(k), which is the weight this script uses.
-The notation is overloaded, not wrong. See notes/H-022.md, opened and
+The notation is overloaded, not wrong. See H-022, opened and
 closed 2026-08-16.
 
 Everything is done in exact rationals; no floating point anywhere.
