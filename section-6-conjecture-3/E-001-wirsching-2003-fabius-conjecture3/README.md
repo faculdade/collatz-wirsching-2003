@@ -46,7 +46,7 @@ point `x_ℓ⁺ = x_ℓ + 3^(−ℓ−1)`:
 
 **What the four corrections were.**
 
-1. The deficit coefficient was quoted as `0.580/ℓ`. That is the value at
+1. The deficit coefficient was quoted as `0.580/ℓ`, which is superseded. That is the value at
    the **bare** point `x_ℓ`, which the script used until 2026-08-17;
    Wirsching's (7.5) and the paper both evaluate at `x_ℓ⁺`, where the
    coefficient is `0.802`. Both are computable now (`--bare-point`
