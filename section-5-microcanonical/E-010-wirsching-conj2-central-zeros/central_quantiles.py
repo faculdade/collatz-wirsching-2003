@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Quantile version of the quantitative half of Wirsching's condition (?3).
+"""Quantile version of the quantitative half of Wirsching's condition (*3).
 
 H-013 asks whether the decay of
 

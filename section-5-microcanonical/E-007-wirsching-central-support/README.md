@@ -15,7 +15,7 @@ It agrees with the exhaustive E-004 tables through `ell=16` and remains
 true through `ell=21`. It fails at `ell=22`. The same residue family is
 centrally reachable at every tested level from 22 through 60. Thus the
 finite support holes do not provide this proposed counterexample to
-condition `(?3)`.
+condition `(*3)`.
 
 Run:
 

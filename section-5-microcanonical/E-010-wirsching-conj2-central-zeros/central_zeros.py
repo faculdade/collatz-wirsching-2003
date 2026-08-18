@@ -6,7 +6,7 @@ Wirsching (2003), equation (2.1), defines
     g_0(k,a) = [k = 0][a in Z_3],
     g_(ell+1)(k,a) = sum_{0<=j<2*3^ell} g_ell(k-j, (2^(j+1) a - 1)/3).
 
-Condition (?3) of his Theorem 2 asks for constants delta, mu > 0 and an
+Condition (*3) of his Theorem 2 asks for constants delta, mu > 0 and an
 index ell_0 such that
 
     g_ell(k_ell, a) >= mu * gbar_ell(k_ell)
@@ -14,8 +14,8 @@ index ell_0 such that
 holds for every unit residue a, every ell >= ell_0 and every sequence
 (k_ell) with |ell - k_ell| <= delta*sqrt(ell).  The constant sequence
 k_ell = ell is admissible for every delta > 0, so a single unit residue
-with g_ell(ell,a) = 0 at some level ell >= ell_0 falsifies (?3) at that
-level.  If such residues exist at every level, no ell_0 works and (?3)
+with g_ell(ell,a) = 0 at some level ell >= ell_0 falsifies (*3) at that
+level.  If such residues exist at every level, no ell_0 works and (*3)
 is false.
 
 This script computes, exactly and for every unit residue modulo 3^ell,

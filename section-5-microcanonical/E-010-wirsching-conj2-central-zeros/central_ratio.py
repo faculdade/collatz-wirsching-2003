@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Quantitative part of Wirsching's condition (?3).
+"""Quantitative part of Wirsching's condition (*3).
 
-Condition (?3) has two independent halves.  The first is support: every
+Condition (*3) has two independent halves.  The first is support: every
 unit residue must satisfy g_ell(k,a) > 0.  The second is quantitative:
 the ratio
 

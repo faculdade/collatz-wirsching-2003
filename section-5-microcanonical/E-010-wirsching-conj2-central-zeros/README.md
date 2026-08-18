@@ -1,4 +1,4 @@
-# E-010: central-cost zeros and the quantitative half of Wirsching's (?3)
+# E-010: central-cost zeros and the quantitative half of Wirsching's (*3)
 
 > **NOTE ON RECORDS.** Hypothesis identifiers such as H-013, the hypothesis tracker and the literature index refer to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
 
@@ -9,20 +9,20 @@ experiment is its entire evidence base) and H-019 (opened from the
 ell=19/20 break below).
 
 Wirsching (2003) reduces uniform positive predecessor density to a chain
-of five conditions. Conjecture 2 is the step `(?4) => (?3)`, where
+of five conditions. Conjecture 2 is the step `(*4) => (*3)`, where
 
 ```text
-(?3)  g_ell(k_ell, a) >= mu * gbar_ell(k_ell)
+(*3)  g_ell(k_ell, a) >= mu * gbar_ell(k_ell)
       for every unit a, every ell >= ell_0, and every sequence
       (k_ell) with |ell - k_ell| <= delta*sqrt(ell),
 ```
 
-and `(?4)` is a statement about the one-dimensional averaging operator
+and `(*4)` is a statement about the one-dimensional averaging operator
 `W_3` that never mentions the generators. Since `k_ell = ell` is an
 admissible sequence for every `delta > 0`, a single unit residue with
-`g_ell(ell,a) = 0` at one level `ell >= ell_0` falsifies `(?3)`.
+`g_ell(ell,a) = 0` at one level `ell >= ell_0` falsifies `(*3)`.
 
-This experiment separates the two independent halves of `(?3)`.
+This experiment separates the two independent halves of `(*3)`.
 
 ## `central_zeros.py`: the support half
 
@@ -42,7 +42,7 @@ pattern E-004 saw through 16. At `ell = 18` there are 11,540,739 zeros
 among 258,280,326 units and 734,754 coherent ones. A coherent subtree
 that stayed nonempty at every level would produce, by the inverse limit
 of nonempty finite sets, a 3-adic `alpha` that is a central-cost zero at
-every level, refuting `(?3)` and `(?2)` at that `alpha`. Its growth
+every level, refuting `(*3)` and `(*2)` at that `alpha`. Its growth
 ratio falls from 2.17 to 1.79 over `ell = 15..18`, which by an
 endpoint-slope read of that window (-0.1280/level) put the crossing of
 1 near `ell = 24`. Updated 2026-08-16 with the two new levels: the
@@ -106,7 +106,7 @@ complete, decays geometrically in `ell`: at `d = +12` it falls from
 level that is the same on both halves of the range. Compensating decay
 at that rate would need the offset to grow linearly in `ell`, and
 Wirsching's window allows only `d <= delta*sqrt(ell)`. Should the rate
-measured here persist, the infimum over `Z_3^x` that `(?3)` demands
+measured here persist, the infimum over `Z_3^x` that `(*3)` demands
 would stabilise nowhere in the window, not only at `k = ell` for lack
 of support.
 
@@ -473,7 +473,7 @@ a bare assertion:
   values, `9/7, 12/7, 6/7, 6/7, 3/7, 6/7` for `a=1,2,4,5,7,8`, i.e.
   four DISTINCT values spread across only two residue classes mod 3,
   which the formula does not permit; the first two are right and the
-  rest were wrong. See H-013.md's own 2026-08-10 correction section). H-166's mechanism worked because
+  rest were wrong. See H-013's own 2026-08-10 correction section). H-166's mechanism worked because
   its denominator transforms under the *same* operator as its
   numerator, pointwise; here it does not.
 - The diagonal `k = ell + d` is not preserved by the one-step recursion

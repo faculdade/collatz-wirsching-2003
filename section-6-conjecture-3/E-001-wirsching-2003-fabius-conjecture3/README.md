@@ -132,18 +132,25 @@ Checked:      producer, against main.tex's the numerical test of (*4) and (*5) a
               c, exactly as this README's own earlier summary and
               H-001 both recorded.
 
-Command:      python3 experiment_conjecture3.py
+SUPERSEDED, kept for provenance. Nothing in the paper rests on this
+block; the 2026-08-17 block above it is the live one. Read it only as
+the record of what the bare-point script produced before the evaluation
+point was corrected.
+
+Command:      python3 experiment_conjecture3.py   (bare points; the
+              committed script now defaults to the shifted point, so
+              this command no longer reproduces the number below)
 Commit:       a31aaec
 Date:         2026-08-15
 Environment:  Linux, Python 3.12.3, numpy 2.5.1
 Exit:         0
 Output:       output/experiment_conjecture3_20260815.txt
-Checked:      fresh run reproduces the ℓ≤300 sweep; at ℓ=300, u=0,
-              L_ℓ=0.664732 against the predicted 2/3≈0.66667, giving
-              300·(2/3−L_ℓ)≈0.580, matching the deficit coefficient
-              quoted above. The ℓ∈{350..500} extension quoted in
-              Result is not reproduced by this script (see Files:
-              it was run inline in the original session, not
-              persisted); that part of the claim rests on the
-              original, unpreserved run, not on this evidence block.
+Checked:      reproduces the ℓ≤300 sweep at the BARE points x_ℓ; at
+              ℓ=300, u=0, L_ℓ=0.664732 against the predicted
+              2/3≈0.66667, giving 300·(2/3−L_ℓ)≈0.580. That 0.580 is
+              the superseded bare-point deficit and must not be read
+              against the 0.802 the paper quotes, which is the shifted
+              value at x_ℓ⁺ that Wirsching's (7.5) requires. The
+              ℓ∈{350..500} range was not reached by this run; it is
+              reached and committed by the live block above.
 ```

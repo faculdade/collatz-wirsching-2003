@@ -10,7 +10,7 @@ compositions of `k` with coordinate capacities
 level.
 
 The reported `min_over_mean` is precisely the finite-level quotient in
-condition `(?3)`, minimized over the residue variable. The normalized
+condition `(*3)`, minimized over the residue variable. The normalized
 collision statistic equals one for a uniform distribution and its
 excess over one is the squared L2 distance from uniform. The costs
 tested are `k=ell+u*floor(sqrt(ell))` for `u=-1,0,1`.

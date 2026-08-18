@@ -1,6 +1,9 @@
 # E-002; Collision mass K_ℓ of the Syracuse measure: testing the L² hypothesis
 
-Related hypothesis: `H-126-regime2-decorrelacao-agregados-irmaos-estrutura-exata.md` (not part of this repository's migrated scope, left unrenumbered)
+> **NOTE ON RECORDS.** Hypothesis identifiers such as H-013, the hypothesis tracker and the literature index refer to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
+
+
+Related hypothesis: `H-126` (not part of this repository's migrated scope, left unrenumbered)
 
 ## What was done
 
