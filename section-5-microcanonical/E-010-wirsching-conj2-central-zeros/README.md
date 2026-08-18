@@ -147,9 +147,11 @@ value it settles at) and then "no trend" (indefensible against a
 45% monotone-ish fall). Corrected 2026-08-16 after the second was
 caught in critique round 3.
 
-Whether the smallest fixed set declining while larger ones stay flat
-means anything is not settled here, and H-013, which drew the
-"fixed sets do not deteriorate" conclusion, is closed
+Only the 486 set is flat end to end: with `ell=17` and `ell=18` the
+1458 set falls from 0.1161 to 0.0892 and 0.0799, and the 4374 set falls
+after its `ell=14` peak. Whether that means anything beyond the 23%
+loss it forces is not settled here, and H-013, whose earlier
+"fixed sets do not deteriorate" reading is superseded, is closed
 (`closed-inconclusive`) and is not reopened by this note (Rule 8d).
 The observation is recorded so it is not lost; a session wanting to
 pursue it should open a hypothesis rather than edit H-013's closure.
@@ -253,9 +255,10 @@ earlier version of this sentence stated "about 0.5 at `ell = 9`" and
 per-offset values.) The population's low tail
 is, at the levels that matter, almost entirely new residues whose
 integer representative only exists from that level on. This is the
-mechanism reconciling the population decay above with the flatness of
-the three larger fixed sets: the group grows and keeps injecting bad
-new residues.
+mechanism explaining PART of the population decay above: the group
+grows and keeps injecting bad new residues. It does not explain all of
+it, since the 1458 set's own fall forces some fixed integer to lose at
+least 23%.
 
 **It does not establish that no small fixed `a` deteriorates**
 (corrected 2026-08-16, round 4; an earlier version said exactly that,
