@@ -161,7 +161,7 @@ def sample_points(ell, us=(-2, -1, -0.5, 0, 0.5, 1, 2), shifted=True):
     return pts
 
 
-def decisive_ratio(M, m, y):
+def ratio_L(M, m, y):
     """L_l = 3^(1-l) * phi(3x+)/phi(x+) = 2*3^(m-l)*F_m(y)/F_{m+1}(y), mesmo y.
     Aqui como funcao auxiliar generica: retorna F_m(y) e F_{m+1}(y) exatos."""
     val_m, _ = F(M, m, y) if m >= 1 else (Fr(1), Fr(0))
@@ -247,7 +247,7 @@ def main():
 
     validate(M)
 
-    print("=== Teste da Conjectura 3: ln(phi/phi0) e razao decisiva L_l ===")
+    print("=== Conjecture 3 test: ln(phi/phi0), and L_l which bears on (*4) only ===")
     print(f"{'ell':>5} {'u':>6} {'k_l':>8} {'m':>5} {'ln phi':>12} {'ln phi0':>12} "
           f"{'ln r':>10} {'L_l=phi(3x)/phi(x)*3^(1-l)':>28} {'rel_err':>10} {'tempo':>8}")
 
@@ -262,7 +262,7 @@ def main():
             lp0 = log_phi0(x)
             lnr = float(logphi - lp0)
 
-            # razao decisiva L_l: phi(3x)/phi(x) usa o MESMO y, so muda m->m-1
+            # L_l: phi(3x)/phi(x) usa o MESMO y, so muda m->m-1
             # phi(x) = (3/2)^(m+1) 3^(-m(m+1)/2) F_{m+1}(y)
             # phi(3x)=(3/2)^m 3^(-(m-1)m/2) F_m(y)  [profundidade m-1 para 3x]
             if m >= 1:

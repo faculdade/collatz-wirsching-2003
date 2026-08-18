@@ -28,18 +28,21 @@ the old version.
 Run to `ℓ=500` (CLT window, `u∈[−2,2]`), evaluated at Wirsching's shifted
 point `x_ℓ⁺ = x_ℓ + 3^(−ℓ−1)`:
 
-- The decisive ratio `L_ℓ = 3^(1−ℓ)·φ(3x_ℓ⁺)/φ(x_ℓ⁺)` approaches `2/3`
+- The ratio `L_ℓ = 3^(1−ℓ)·φ(3x_ℓ⁺)/φ(x_ℓ⁺)`, which bears on `(⋆4)` and
+  not on `(⋆5)` because it cannot see a periodic factor, approaches `2/3`
   at every `u` tested, monotonically in `ℓ`, with a central-sequence
   deficit `ℓ·(2/3 − L_ℓ)` of `0.8026` at `ℓ=200` and `0.8021` at
   `ℓ=500`.
-- `ln(φ/φ₀)` has a limit consistent with a constant, near-uniformly in
-  `u`: the spread across the seven tested `u` at `ℓ=500` is
-  `6.33×10⁻⁵`.
+- `ln(φ/φ₀)` behaves consistently with convergence to a constant,
+  near-uniformly in `u`: the spread across the seven tested `u` at
+  `ℓ=500` is `6.33×10⁻⁵`. Whether the limit exists is not settled by
+  this or any finite computation.
 - Extrapolating that limit is model-dependent, and this is the dominant
   uncertainty. `C/√ℓ` gives `L∞ = −0.618860`, so `c = 0.5386`, with
   maximum residual `2.1×10⁻⁵`; `C/ln²ℓ` gives `L∞ = −0.599498`, so
   `c = 0.5491`, with maximum residual `5.5×10⁻⁵`. The two fit this range
-  comparably, so `c` is pinned only to `[0.539, 0.549]`.
+  comparably, so `[0.539, 0.549]` is the span of the two fitted forms,
+  not a bound on `c` and not evidence that a third form is excluded.
 
 **What the four corrections were.**
 
@@ -99,13 +102,17 @@ Checked:      producer, against main.tex's the same-phase remark. All twelve fig
               the older bare-point log, which stopped at l=300.
 
 Command:      python3 experiment_conjecture3.py --max-ell 500
-Commit:       e007f33
+Commit:       f3c3794
 Date:         2026-08-17
 Environment:  Linux, Python 3.12.3, mpmath (mp.dps=100), numpy 2.5.1
 Exit:         0
 Output:       section-6-conjecture-3/E-001-wirsching-2003-fabius-conjecture3/conjecture3_shifted_ell500.log
 Checked:      producer, against main.tex's the numerical test of (*4) and (*5) and
-              the same-phase remark. Runtime 314.8 s. This is the run that closes the
+              the same-phase remark. Runtime 310.0 s. Re-run in critique
+              round 9 after the script's stated target was corrected, and
+              every figure the paper quotes reproduced digit for digit:
+              spread 6.333e-05, L_inf -0.618860 and -0.599498, c 0.5386 and
+              0.5491, residuals 2.14e-05 and 5.51e-05, model spread 0.0194. This is the run that closes the
               two evidence gaps critique round 1 raised, both found by
               both critics: the script now evaluates at the paper's
               x_l^+ = x_l + 3^-(l+1) rather than the bare x_l, and reaches
