@@ -3,7 +3,7 @@
 > **NOTE ON PATHS.** References below to `notes/`, `literature/` or `HYPOTHESES.md` are to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
 
 
-Related hypothesis: [`H-001`](../../notes/H-001.md)
+Related hypothesis: ``H-001``
 
 ## What was done
 

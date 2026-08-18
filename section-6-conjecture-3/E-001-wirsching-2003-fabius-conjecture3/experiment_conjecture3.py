@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-
-> **NOTE ON PATHS.** References below to `notes/`, `literature/` or `HYPOTHESES.md` are to the framework repository, which is not public. Everything a reader needs to reproduce the paper's computations is in this repository.
-
+# NOTE ON PATHS. References below to `notes/`, `literature/` or
+# `HYPOTHESES.md` are to the framework repository, which is not public.
+# Everything a reader needs to reproduce the paper's computations is in
+# this repository.
 """
 H-001 - teste computacional certificado da Conjectura 3 de Wirsching
 (2003, "On positive predecessor density in 3n+1 dynamics", DCDS 9(3)).
