@@ -23,8 +23,11 @@ floating point anywhere:
      occupancies (bounded) and unbounded compositions,
   2. the cancellation, coefficient by coefficient, against the binomial
      coefficients of (1-z)^{-(l+1)},
-  3. the identity q_l(k) = 2 * 3^(l-1) * gbar_l(k) against a from-scratch
-     implementation of Wirsching's recursion (2.1),
+  3. the identity q_l(k) = 2 * 3^(l-1) * gbar_l(k), where gbar_l comes
+     from the same bounded-urn count used above rather than from an
+     independent implementation of Wirsching's recursion (2.1); this
+     check is algebraically downstream of the object it checks and is
+     a consistency check, not independent corroboration,
   4. the convolution identity (p_l * gbar_l)(k) = C(k+l,l)/(2*3^(l-1)).
 
 Run:  python3 cancellation_check.py [--max-ell 8] [--max-k 24]
