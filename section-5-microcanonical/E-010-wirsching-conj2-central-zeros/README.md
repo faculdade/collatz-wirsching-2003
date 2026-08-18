@@ -103,11 +103,17 @@ python3 central_ratio.py --max-ell 16 --offsets 5 --sqrt-multiples 1 \
 Minimum over all units, at offsets where the support is already
 complete, decays geometrically in `ell`: at `d = +12` it falls from
 0.4805 at `ell = 6` to 0.2555 at `ell = 16`, a factor near 0.94 per
-level that is the same on both halves of the range. The offset would
-have to grow linearly in `ell` to compensate, and Wirsching's window
-allows only `d <= delta*sqrt(ell)`. So the infimum over `Z_3^x` that
-`(?3)` demands stabilises nowhere in the window, not only at `k = ell`
-for lack of support.
+level that is the same on both halves of the range. Compensating decay
+at that rate would need the offset to grow linearly in `ell`, and
+Wirsching's window allows only `d <= delta*sqrt(ell)`. Should the rate
+measured here persist, the infimum over `Z_3^x` that `(?3)` demands
+would stabilise nowhere in the window, not only at `k = ell` for lack
+of support.
+
+That is an extrapolation, and it is the whole of what these numbers
+support. The run reaches `ell = 16`. A geometric fit over eleven levels
+settles no asymptotic question, and nothing here bears on Conjecture 2,
+which the paper leaves open.
 
 Minimum over a fixed set of integers behaves differently. At `d = +5`,
 over all 486 units below `3^6`, the ratio reads 0.1019, 0.1472, 0.1341,
